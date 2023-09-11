@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include erpyoupal *.css
+recursive-include erpyoupal *.csv
+recursive-include erpyoupal *.html
+recursive-include erpyoupal *.ico
+recursive-include erpyoupal *.js
+recursive-include erpyoupal *.json
+recursive-include erpyoupal *.md
+recursive-include erpyoupal *.png
+recursive-include erpyoupal *.py
+recursive-include erpyoupal *.svg
+recursive-include erpyoupal *.txt
+recursive-exclude erpyoupal *.pyc
