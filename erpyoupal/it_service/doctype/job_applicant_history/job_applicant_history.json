@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-06 11:54:32.353871",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "view",
+  "job_applicant",
+  "job_opening",
+  "date_created",
+  "rate",
+  "designation",
+  "sub_designation"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_applicant",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Job Applicant ID",
+   "options": "Job Applicant"
+  },
+  {
+   "fieldname": "job_opening",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Job Opening"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Date Created"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rate",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "view",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "View"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sub_designation",
+   "fieldtype": "Data",
+   "label": "Sub Designation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-10 17:42:38.871858",
+ "modified_by": "Administrator",
+ "module": "IT Service",
+ "name": "Job Applicant History",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

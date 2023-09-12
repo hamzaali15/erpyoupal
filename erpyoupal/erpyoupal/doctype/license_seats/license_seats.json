@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-02 16:29:26.837552",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "seat_no",
+  "user",
+  "asset",
+  "location",
+  "checkin_checkout"
+ ],
+ "fields": [
+  {
+   "fieldname": "seat_no",
+   "fieldtype": "Data",
+   "label": "Seat #"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "label": "User"
+  },
+  {
+   "fieldname": "asset",
+   "fieldtype": "Data",
+   "label": "Asset"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "default": "Checkout",
+   "fieldname": "checkin_checkout",
+   "fieldtype": "Select",
+   "label": "Checkin/Checkout",
+   "options": "Check-in\nCheckout"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-29 06:48:44.175564",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "License Seats",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

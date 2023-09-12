@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "creation": "2022-05-27 05:28:53.719983",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "clockify_user",
+  "full_name",
+  "membership_type",
+  "membership_status",
+  "hourly_rate",
+  "currency",
+  "disable_ss",
+  "disable_link"
+ ],
+ "fields": [
+  {
+   "fieldname": "clockify_user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "Clockify User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "membership_type",
+   "fieldtype": "Read Only",
+   "label": "Membership Type"
+  },
+  {
+   "fieldname": "membership_status",
+   "fieldtype": "Read Only",
+   "label": "Membership Status"
+  },
+  {
+   "fieldname": "hourly_rate",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Hourly Rate"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Currency"
+  },
+  {
+   "fetch_from": "clockify_user.full_name",
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full name",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disable_ss",
+   "fieldtype": "Check",
+   "label": "Disable SS"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable_link",
+   "fieldtype": "Check",
+   "label": "Disable Link"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-04-10 17:41:55.187651",
+ "modified_by": "Administrator",
+ "module": "Clockify Project",
+ "name": "Clockify Project Members",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

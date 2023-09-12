@@ -1,0 +1,37 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-23 16:13:51.981819",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "platform_social_media",
+  "link"
+ ],
+ "fields": [
+  {
+   "fieldname": "platform_social_media",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Platform / Social Media"
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Link"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-08-02 09:24:13.400906",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Social Platform Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-06 13:33:15.890183",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assessment_id",
+  "assessment_name"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "assessment_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Assessment ID",
+   "options": "TestGorilla Asessment"
+  },
+  {
+   "columns": 7,
+   "fetch_from": "assessment_id.assessment_name",
+   "fieldname": "assessment_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Assessment Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-29 06:42:03.480705",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Job Opening TestGorilla Relevant Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

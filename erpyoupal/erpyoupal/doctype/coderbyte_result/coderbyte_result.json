@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-23 11:03:23.679536",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "email",
+  "date_completed",
+  "name1",
+  "assessment_link",
+  "unique_id",
+  "assessment_id",
+  "plagiarism",
+  "time_taken",
+  "coding_score",
+  "multiple_choice_score",
+  "final_score"
+ ],
+ "fields": [
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "date_completed",
+   "fieldtype": "Data",
+   "label": "Date Completed"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "assessment_link",
+   "fieldtype": "Data",
+   "label": "Link to Assesment"
+  },
+  {
+   "fieldname": "unique_id",
+   "fieldtype": "Data",
+   "label": "Unique ID"
+  },
+  {
+   "fieldname": "assessment_id",
+   "fieldtype": "Data",
+   "label": "Assessment ID"
+  },
+  {
+   "fieldname": "plagiarism",
+   "fieldtype": "Data",
+   "label": "Plagiarism"
+  },
+  {
+   "fieldname": "time_taken",
+   "fieldtype": "Data",
+   "label": "Time Taken"
+  },
+  {
+   "fieldname": "coding_score",
+   "fieldtype": "Data",
+   "label": "Coding Score"
+  },
+  {
+   "fieldname": "multiple_choice_score",
+   "fieldtype": "Data",
+   "label": "Multiple Choice Score"
+  },
+  {
+   "fieldname": "final_score",
+   "fieldtype": "Data",
+   "label": "Final Score"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-29 06:29:45.850497",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Coderbyte Result",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

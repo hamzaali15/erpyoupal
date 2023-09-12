@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "autoname": "field:tag_name",
+ "creation": "2022-07-25 16:22:00.358764",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tag_name",
+  "tag_fullname",
+  "column_break_3",
+  "name_extension",
+  "section_break_5",
+  "workspace",
+  "erp_tag_id",
+  "erp_tag_name",
+  "column_break_9",
+  "clockify_tag_id",
+  "clockify_tag_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "tag_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tag Name",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "tag_fullname",
+   "fieldtype": "Data",
+   "label": "Tag Fullname",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_extension",
+   "fieldtype": "Data",
+   "label": "Name Extension",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "workspace",
+   "fieldtype": "Link",
+   "label": "Workspace",
+   "options": "Clockify Workspace"
+  },
+  {
+   "fieldname": "erp_tag_id",
+   "fieldtype": "Data",
+   "label": "ERP Tag ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "erp_tag_name",
+   "fieldtype": "Data",
+   "label": "ERP Tag Name"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clockify_tag_id",
+   "fieldtype": "Data",
+   "label": "Clockify Tag ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clockify_tag_name",
+   "fieldtype": "Data",
+   "label": "Clockify Tag Name",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-05 11:30:32.673927",
+ "modified_by": "Administrator",
+ "module": "Clockify Project",
+ "name": "Clockify Tag",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

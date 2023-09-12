@@ -1,0 +1,732 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {company_name}-{#####}",
+ "creation": "2021-12-21 19:22:26.337719",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "organization",
+  "basic_details_section",
+  "company_details",
+  "agency_id",
+  "company_name",
+  "founded",
+  "speciality",
+  "rate_hourly",
+  "company_size",
+  "eu_zone",
+  "status",
+  "column_break_6",
+  "site_links",
+  "website",
+  "linkedin_profile",
+  "upwork_profile",
+  "company_logo",
+  "column_break_12",
+  "verifications_nda",
+  "location",
+  "data_protection",
+  "verification",
+  "nda",
+  "agreement_link",
+  "lead_info_section",
+  "lead_first_name",
+  "email_primary",
+  "column_break_22",
+  "lead_last_name",
+  "mobile_primary",
+  "role_in_company",
+  "section_break_19",
+  "currency",
+  "employees",
+  "column_break_21",
+  "hourly_rate",
+  "minimum_project_size",
+  "preferences_section",
+  "work_type",
+  "column_break_36",
+  "work_destination",
+  "social_and_platforms",
+  "social",
+  "add_social",
+  "column_break_47",
+  "platforms_heading",
+  "platforms",
+  "summary_section",
+  "tagline",
+  "description",
+  "skill_section",
+  "skill",
+  "projects_section",
+  "add_projects",
+  "certifications_section",
+  "add_certifications",
+  "language_section",
+  "language_proficiency_level",
+  "contract_documents_section",
+  "nda_link",
+  "nda_expiry_date",
+  "column_break_60",
+  "contracts",
+  "official_documents_section",
+  "verifications",
+  "id_document_verification",
+  "visual_verification",
+  "column_break_66",
+  "id_dateofverification",
+  "visual_dateofverification",
+  "column_break_69",
+  "identity_document_type",
+  "id_card_section",
+  "idcard_nationality",
+  "idcard_personalidnum",
+  "id_card_gender",
+  "column_break_74",
+  "idcard_dob",
+  "idcard_cityofbirth",
+  "idcard_countryofbirth",
+  "column_break_78",
+  "id_card_date_of_issue",
+  "id_card_date_of_expiry",
+  "id_card_issued_by",
+  "passport_section",
+  "passport_nationality",
+  "passport_no",
+  "passport_visa_type",
+  "column_break_87",
+  "passport_date_of_birth",
+  "passport_city_of_birth",
+  "passport_country_of_birth",
+  "column_break_91",
+  "passport_date_of_issue",
+  "passport_date_of_expiry",
+  "passport_issued_by",
+  "billing_details_section",
+  "business_id",
+  "bank_name",
+  "organization_name",
+  "organization_address",
+  "vat",
+  "preferred_currency",
+  "account_number",
+  "clearing_number",
+  "iban__swift"
+ ],
+ "fields": [
+  {
+   "fieldname": "organization",
+   "fieldtype": "Link",
+   "label": "Organization",
+   "options": "Organizations"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "company_details",
+   "fieldtype": "Heading",
+   "label": "Company Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "agency_id",
+   "fieldtype": "Data",
+   "label": "Agency ID",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "organization.organization_name",
+   "fetch_if_empty": 1,
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "founded",
+   "fieldtype": "Date",
+   "label": "Founded"
+  },
+  {
+   "fieldname": "speciality",
+   "fieldtype": "Table MultiSelect",
+   "label": "Speciality",
+   "options": "Speciality Item"
+  },
+  {
+   "fieldname": "rate_hourly",
+   "fieldtype": "Select",
+   "label": "Rate (Hourly)",
+   "options": "N/A\n< $25\n$25-$49\n$50-$99\n$100-$149\n$150-$199\n$200-$300\n$300+"
+  },
+  {
+   "fieldname": "company_size",
+   "fieldtype": "Select",
+   "label": "Company Size",
+   "options": "N/A\n1-10\n11-50\n51-200\n201-500\n501-1000\n1001-5000\n5001-10000\n10001+"
+  },
+  {
+   "fieldname": "eu_zone",
+   "fieldtype": "Select",
+   "label": "EU Zone",
+   "options": "Yes\nNo"
+  },
+  {
+   "fetch_from": "organization.status",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Active\nInactive\nSeparated"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_links",
+   "fieldtype": "Heading",
+   "label": "Site Links"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Attach",
+   "label": "Website"
+  },
+  {
+   "fieldname": "linkedin_profile",
+   "fieldtype": "Attach",
+   "label": "LinkedIn Profile"
+  },
+  {
+   "fieldname": "upwork_profile",
+   "fieldtype": "Attach",
+   "label": "Job Site"
+  },
+  {
+   "fieldname": "company_logo",
+   "fieldtype": "Attach Image",
+   "label": "Company Logo"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "verifications_nda",
+   "fieldtype": "Heading",
+   "label": "Verifications & NDA"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Country"
+  },
+  {
+   "fieldname": "data_protection",
+   "fieldtype": "Read Only",
+   "label": "Data Protection"
+  },
+  {
+   "fetch_from": "organization.verification",
+   "fieldname": "verification",
+   "fieldtype": "Select",
+   "label": "Verification",
+   "options": "Unknown\nVetted\nProven"
+  },
+  {
+   "fieldname": "nda",
+   "fieldtype": "Select",
+   "label": "NDA",
+   "options": "Yes\nNo\nIn Process"
+  },
+  {
+   "fieldname": "agreement_link",
+   "fieldtype": "Attach",
+   "label": "Agreement Link"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "lead_info_section",
+   "fieldtype": "Section Break",
+   "label": "Lead Info"
+  },
+  {
+   "fieldname": "lead_first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "email_primary",
+   "fieldtype": "Data",
+   "label": "Email (Primary)"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lead_last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "mobile_primary",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile (Primary)"
+  },
+  {
+   "fieldname": "role_in_company",
+   "fieldtype": "Data",
+   "label": "Role In Company"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break",
+   "label": "Employees & Rates"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Select",
+   "label": "Currency",
+   "options": "\nUSD\nEURO\nSEK"
+  },
+  {
+   "fieldname": "employees",
+   "fieldtype": "Select",
+   "label": "Employees",
+   "options": "\n2-9\n10-49\n50-249\n250-999\n1000-9999\n10000+"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "currency",
+   "fieldname": "hourly_rate",
+   "fieldtype": "Select",
+   "label": "Hourly Rate"
+  },
+  {
+   "depends_on": "currency",
+   "fieldname": "minimum_project_size",
+   "fieldtype": "Select",
+   "label": "Minimum Project Size"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "preferences_section",
+   "fieldtype": "Section Break",
+   "label": "Preferences"
+  },
+  {
+   "fieldname": "work_type",
+   "fieldtype": "Select",
+   "label": "Work Type",
+   "options": "Remote\nOnsite"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "work_destination",
+   "fieldtype": "Select",
+   "label": "Work Destination",
+   "options": "National\nInternational"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "social_and_platforms",
+   "fieldtype": "Section Break",
+   "label": "Social & Platforms"
+  },
+  {
+   "fieldname": "social",
+   "fieldtype": "Heading",
+   "label": "Social"
+  },
+  {
+   "fieldname": "add_social",
+   "fieldtype": "Table",
+   "label": "Add Socials",
+   "options": "Socials"
+  },
+  {
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "platforms_heading",
+   "fieldtype": "Heading",
+   "label": "Platforms"
+  },
+  {
+   "fieldname": "platforms",
+   "fieldtype": "Table",
+   "label": "Add Platforms",
+   "options": "Platforms"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "summary_section",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "tagline",
+   "fieldtype": "Data",
+   "label": "Tagline",
+   "length": 75
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "skill_section",
+   "fieldtype": "Section Break",
+   "label": "Skills"
+  },
+  {
+   "fieldname": "skill",
+   "fieldtype": "Table MultiSelect",
+   "in_standard_filter": 1,
+   "label": "Skills",
+   "options": "Skill Item"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "projects_section",
+   "fieldtype": "Section Break",
+   "label": "Projects"
+  },
+  {
+   "fieldname": "add_projects",
+   "fieldtype": "Table",
+   "label": "Add Projects",
+   "options": "Projects Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "certifications_section",
+   "fieldtype": "Section Break",
+   "label": "Certifications"
+  },
+  {
+   "fieldname": "add_certifications",
+   "fieldtype": "Table",
+   "label": "Add Certifications",
+   "options": "Certifications"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "language_section",
+   "fieldtype": "Section Break",
+   "label": "Language"
+  },
+  {
+   "fieldname": "language_proficiency_level",
+   "fieldtype": "Table",
+   "label": "Language Proficiency Level",
+   "options": "Languages Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "contract_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Contract Documents"
+  },
+  {
+   "fieldname": "nda_link",
+   "fieldtype": "Attach",
+   "label": "NDA Link"
+  },
+  {
+   "fieldname": "nda_expiry_date",
+   "fieldtype": "Date",
+   "label": "NDA Expiry Date"
+  },
+  {
+   "fieldname": "column_break_60",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contracts",
+   "fieldtype": "Table",
+   "label": "Contracts",
+   "options": "Contracts Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "official_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Official Documents"
+  },
+  {
+   "fieldname": "verifications",
+   "fieldtype": "Heading",
+   "label": "Verifications"
+  },
+  {
+   "default": "0",
+   "fieldname": "id_document_verification",
+   "fieldtype": "Check",
+   "label": "ID Document verification"
+  },
+  {
+   "default": "0",
+   "fieldname": "visual_verification",
+   "fieldtype": "Check",
+   "label": "Visual Verification"
+  },
+  {
+   "fieldname": "column_break_66",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "id_dateofverification",
+   "fieldtype": "Date",
+   "label": "Date of Verification"
+  },
+  {
+   "fieldname": "visual_dateofverification",
+   "fieldtype": "Date",
+   "label": "Date of Verification"
+  },
+  {
+   "fieldname": "column_break_69",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "identity_document_type",
+   "fieldtype": "Select",
+   "label": "Identity Document Type",
+   "options": "\nID Card\nPassport"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval: doc.identity_document_type==\"ID Card\"",
+   "fieldname": "id_card_section",
+   "fieldtype": "Section Break",
+   "label": "ID Card"
+  },
+  {
+   "fieldname": "idcard_nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Country"
+  },
+  {
+   "fieldname": "idcard_personalidnum",
+   "fieldtype": "Data",
+   "label": "Personal ID Number"
+  },
+  {
+   "fieldname": "id_card_gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "column_break_74",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "idcard_dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "idcard_cityofbirth",
+   "fieldtype": "Data",
+   "label": "City of Birth"
+  },
+  {
+   "fieldname": "idcard_countryofbirth",
+   "fieldtype": "Data",
+   "label": "Country of Birth"
+  },
+  {
+   "fieldname": "column_break_78",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "id_card_date_of_issue",
+   "fieldtype": "Date",
+   "label": "Date of Issue"
+  },
+  {
+   "fieldname": "id_card_date_of_expiry",
+   "fieldtype": "Date",
+   "label": "Date of Expiry"
+  },
+  {
+   "fieldname": "id_card_issued_by",
+   "fieldtype": "Data",
+   "label": "Issued By"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval: doc.identity_document_type==\"Passport\"",
+   "fieldname": "passport_section",
+   "fieldtype": "Section Break",
+   "label": "Passport"
+  },
+  {
+   "fieldname": "passport_nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Country"
+  },
+  {
+   "fieldname": "passport_no",
+   "fieldtype": "Data",
+   "label": "Passport No"
+  },
+  {
+   "fieldname": "passport_visa_type",
+   "fieldtype": "Data",
+   "label": "Visa Type"
+  },
+  {
+   "fieldname": "column_break_87",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "passport_date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "passport_city_of_birth",
+   "fieldtype": "Data",
+   "label": "City of Birth"
+  },
+  {
+   "fieldname": "passport_country_of_birth",
+   "fieldtype": "Data",
+   "label": "Country of Birth"
+  },
+  {
+   "fieldname": "column_break_91",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "passport_date_of_issue",
+   "fieldtype": "Date",
+   "label": "Date of Issue"
+  },
+  {
+   "fieldname": "passport_date_of_expiry",
+   "fieldtype": "Date",
+   "label": "Date of Expiry"
+  },
+  {
+   "fieldname": "passport_issued_by",
+   "fieldtype": "Data",
+   "label": "Issued By"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "billing_details_section",
+   "fieldtype": "Section Break",
+   "label": "Billing Details"
+  },
+  {
+   "fetch_from": "organization.business_id",
+   "fetch_if_empty": 1,
+   "fieldname": "business_id",
+   "fieldtype": "Data",
+   "label": "Business ID"
+  },
+  {
+   "fetch_from": "organization.bank_name",
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "organization_name",
+   "fieldtype": "Data",
+   "label": "Organization Name"
+  },
+  {
+   "fieldname": "organization_address",
+   "fieldtype": "Data",
+   "label": "Organization Address"
+  },
+  {
+   "fetch_from": "organization.vat",
+   "fieldname": "vat",
+   "fieldtype": "Data",
+   "label": "VAT"
+  },
+  {
+   "fieldname": "preferred_currency",
+   "fieldtype": "Select",
+   "label": "Preferred Currency",
+   "options": "USD\nEURO\nGBP\nSEK"
+  },
+  {
+   "fetch_from": "organization.account_number",
+   "fetch_if_empty": 1,
+   "fieldname": "account_number",
+   "fieldtype": "Int",
+   "label": "Account Number"
+  },
+  {
+   "fetch_from": "organization.clearing_number",
+   "fetch_if_empty": 1,
+   "fieldname": "clearing_number",
+   "fieldtype": "Int",
+   "label": "Clearing Number"
+  },
+  {
+   "fetch_from": "organization.iban_swift",
+   "fetch_if_empty": 1,
+   "fieldname": "iban__swift",
+   "fieldtype": "Data",
+   "label": "IBAN / SWIFT"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "IT Consultant",
+   "link_fieldname": "agency_name"
+  }
+ ],
+ "modified": "2023-03-29 06:37:14.412264",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "IT Partner Agency",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

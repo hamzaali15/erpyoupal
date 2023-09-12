@@ -1,0 +1,199 @@
+{
+ "actions": [],
+ "autoname": "format:{it_consultant}-{#####}",
+ "creation": "2022-05-10 16:05:42.190464",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_applicant",
+  "it_consultant",
+  "applicant_name",
+  "email",
+  "column_break_3",
+  "date_created",
+  "status",
+  "test_status",
+  "section_break_6",
+  "assessment_title",
+  "assessment_id",
+  "column_break_10",
+  "average_score",
+  "assessment_link",
+  "invitation_section",
+  "invitation_id",
+  "test_taker_id",
+  "column_break_15",
+  "invitation_uuid",
+  "date_invited",
+  "section_break_19",
+  "tests_included",
+  "section_break_21",
+  "retakes",
+  "section_break_23",
+  "ready_for_background_check"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_applicant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Applicant",
+   "options": "Job Applicant"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break",
+   "label": "Assessment"
+  },
+  {
+   "fetch_from": "it_consultant.full_name",
+   "fieldname": "applicant_name",
+   "fieldtype": "Read Only",
+   "label": "Applicant Name"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date_created",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Date Created",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "it_consultant.email_primary",
+   "fieldname": "email",
+   "fieldtype": "Read Only",
+   "label": "Email"
+  },
+  {
+   "fieldname": "assessment_title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "assessment_id",
+   "fieldtype": "Data",
+   "label": "Assessment ID"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "assessment_link",
+   "fieldtype": "Read Only",
+   "label": "Assessment Link"
+  },
+  {
+   "fieldname": "invitation_section",
+   "fieldtype": "Section Break",
+   "label": "Invitation"
+  },
+  {
+   "fieldname": "invitation_id",
+   "fieldtype": "Data",
+   "label": "Candidature ID"
+  },
+  {
+   "fieldname": "test_taker_id",
+   "fieldtype": "Data",
+   "label": "Test Taker ID"
+  },
+  {
+   "fieldname": "invitation_uuid",
+   "fieldtype": "Data",
+   "label": "Invitation UUID"
+  },
+  {
+   "fieldname": "date_invited",
+   "fieldtype": "Data",
+   "label": "Date Invited"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tests_included",
+   "fieldtype": "Table",
+   "label": "Tests Included",
+   "options": "Skill Test Table",
+   "read_only": 1
+  },
+  {
+   "fieldname": "average_score",
+   "fieldtype": "Data",
+   "label": "Average Score"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ready_for_background_check",
+   "fieldtype": "Check",
+   "label": "Ready for Background Check"
+  },
+  {
+   "fieldname": "retakes",
+   "fieldtype": "Table",
+   "label": "Retake History",
+   "options": "Skill Test Retake",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test_status",
+   "fieldtype": "Read Only",
+   "label": "Test Status"
+  },
+  {
+   "fieldname": "it_consultant",
+   "fieldtype": "Link",
+   "label": "IT Consultant",
+   "options": "IT Consultant"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-23 16:13:37.555055",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Skill Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "applicant_name"
+}

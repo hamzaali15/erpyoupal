@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-12-27 15:58:07.586213",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "designation",
+  "employment_type",
+  "company",
+  "city",
+  "industry",
+  "technologies_methodologies_multiselect",
+  "column_break_6",
+  "empty_space",
+  "i_am_currently_working_in_this_role",
+  "from_date",
+  "start_month",
+  "start_year",
+  "to_date",
+  "end_month",
+  "end_year",
+  "section_break_9",
+  "description",
+  "attachments",
+  "media"
+ ],
+ "fields": [
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title / Role"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "industry",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Industry",
+   "options": "\nAerospace Industry\nTransport Industry\nComputer Industry\nTelecommunication industry\nAgriculture industry\nConstruction Industry\nEducation Industry\nPharmaceutical Industry\nFood Industry\nHealth care Industry\nHospitality Industry\nEntertainment Industry\nNews Media Industry\nEnergy Industry\nManufacturing Industry\nMusic Industry\nMining Industry\nWorldwide web\nElectronics Industry"
+  },
+  {
+   "fieldname": "technologies_methodologies_multiselect",
+   "fieldtype": "Table MultiSelect",
+   "label": "Technologies & Methodologies used",
+   "options": "Skill Item"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "empty_space",
+   "fieldtype": "Heading",
+   "label": " "
+  },
+  {
+   "default": "0",
+   "fieldname": "i_am_currently_working_in_this_role",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "I am currently working in this role"
+  },
+  {
+   "date_hide_days": 1,
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Start Date"
+  },
+  {
+   "date_hide_days": 1,
+   "depends_on": "eval:doc.i_am_currently_working_in_this_role != 1",
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "End Date"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Describe your responsibilities, objectives and key results (Max: 400 characters)"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Select",
+   "label": "Employment type",
+   "options": "\nFull-time\nPart-time\nSelf-Employed\nFreelance\nContract\nInternship\nApprenticeship\nSeasonal"
+  },
+  {
+   "fieldname": "media",
+   "fieldtype": "Attach",
+   "label": "Media "
+  },
+  {
+   "fieldname": "start_month",
+   "fieldtype": "Data",
+   "label": "Start Month"
+  },
+  {
+   "fieldname": "start_year",
+   "fieldtype": "Data",
+   "label": "Start Year"
+  },
+  {
+   "fieldname": "end_month",
+   "fieldtype": "Data",
+   "label": "End Month"
+  },
+  {
+   "fieldname": "end_year",
+   "fieldtype": "Data",
+   "label": "End Year"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-09-19 11:54:58.154460",
+ "modified_by": "Administrator",
+ "module": "IT Service",
+ "name": "IT Experience Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

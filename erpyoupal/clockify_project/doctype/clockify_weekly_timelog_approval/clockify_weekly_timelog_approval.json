@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-11 15:09:08.122086",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "workspace",
+  "clockify_user",
+  "status",
+  "auto_approve_on",
+  "processed",
+  "column_break_4",
+  "period_from",
+  "period_to",
+  "week_number",
+  "total_hours",
+  "total_amount",
+  "timelogs_included_section",
+  "weekly_timelog_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "workspace",
+   "fieldtype": "Link",
+   "label": "Workspace",
+   "options": "Clockify Workspace"
+  },
+  {
+   "fieldname": "clockify_user",
+   "fieldtype": "Link",
+   "label": "Clockify User",
+   "options": "Clockify User"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Pending\nApproved\nDispute"
+  },
+  {
+   "fieldname": "total_hours",
+   "fieldtype": "Float",
+   "label": "Total Hours"
+  },
+  {
+   "default": "0",
+   "fieldname": "processed",
+   "fieldtype": "Check",
+   "label": "Processed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "period_from",
+   "fieldtype": "Date",
+   "label": "Period From"
+  },
+  {
+   "fieldname": "period_to",
+   "fieldtype": "Date",
+   "label": "Period To"
+  },
+  {
+   "fieldname": "week_number",
+   "fieldtype": "Data",
+   "label": "Week Number"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "timelogs_included_section",
+   "fieldtype": "Section Break",
+   "label": "Timelogs Included"
+  },
+  {
+   "fieldname": "weekly_timelog_table",
+   "fieldtype": "Table",
+   "options": "Clockify Weekly Timelog Table"
+  },
+  {
+   "fieldname": "auto_approve_on",
+   "fieldtype": "Datetime",
+   "label": "Auto Approve On"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-15 22:32:03.744270",
+ "modified_by": "Administrator",
+ "module": "Clockify Project",
+ "name": "Clockify Weekly Timelog Approval",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "clockify_user"
+}

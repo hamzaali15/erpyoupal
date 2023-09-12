@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-15 09:34:22.674114",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assessment_title",
+  "assessment_id",
+  "average_score",
+  "date_created",
+  "skill_test_data"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Retake Date"
+  },
+  {
+   "fieldname": "assessment_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Assessment"
+  },
+  {
+   "fieldname": "assessment_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Assessment ID"
+  },
+  {
+   "fieldname": "average_score",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Average Score"
+  },
+  {
+   "fieldname": "skill_test_data",
+   "fieldtype": "Link",
+   "label": "Skill Test Data",
+   "options": "Skill Test Retake Data"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-07-15 11:00:30.935586",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Skill Test Retake",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

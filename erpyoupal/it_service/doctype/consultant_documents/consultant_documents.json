@@ -1,0 +1,250 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-20 10:59:26.188963",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "contractdoc_section",
+  "nda_link",
+  "nda_expiry_date",
+  "column_break_68",
+  "contracts",
+  "officialdocs_section",
+  "verifications",
+  "id_document_verification",
+  "visual_verification",
+  "column_break_73",
+  "id_dateofverification",
+  "visual_dateofverification",
+  "column_break_76",
+  "identity_document",
+  "id_card_section",
+  "idcard_nationality",
+  "idcard_personalidnum",
+  "idcard_dob",
+  "idcard_cityofbirth",
+  "idcard_countryofbirth",
+  "idcard_gender",
+  "idcard_dateofissue",
+  "idcard_dateofexpiry",
+  "idcard_issuedby",
+  "passport_section",
+  "passport_nationality",
+  "passport_number",
+  "passport_dob",
+  "passport_cityofbirth",
+  "passport_countryofbirth",
+  "passport_gender",
+  "passport_dateofissue",
+  "passport_dateofexpiry",
+  "passport_issuedby"
+ ],
+ "fields": [
+  {
+   "collapsible": 1,
+   "fieldname": "contractdoc_section",
+   "fieldtype": "Section Break",
+   "label": "Contract Documents"
+  },
+  {
+   "fieldname": "nda_link",
+   "fieldtype": "Attach",
+   "label": "NDA Link"
+  },
+  {
+   "fieldname": "nda_expiry_date",
+   "fieldtype": "Date",
+   "label": "NDA expiry date"
+  },
+  {
+   "fieldname": "column_break_68",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contracts",
+   "fieldtype": "Table",
+   "label": "Contracts",
+   "options": "Contracts Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "officialdocs_section",
+   "fieldtype": "Section Break",
+   "label": "Official Documents"
+  },
+  {
+   "fieldname": "verifications",
+   "fieldtype": "Heading",
+   "label": "Verifications"
+  },
+  {
+   "default": "0",
+   "fieldname": "id_document_verification",
+   "fieldtype": "Check",
+   "label": "ID Document verification"
+  },
+  {
+   "default": "0",
+   "fieldname": "visual_verification",
+   "fieldtype": "Check",
+   "label": "Visual Verification"
+  },
+  {
+   "fieldname": "column_break_73",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "id_dateofverification",
+   "fieldtype": "Date",
+   "label": "Date of Verification"
+  },
+  {
+   "fieldname": "visual_dateofverification",
+   "fieldtype": "Date",
+   "label": "Date of Verification"
+  },
+  {
+   "fieldname": "column_break_76",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "identity_document",
+   "fieldtype": "Select",
+   "label": "Identity Document",
+   "options": "ID Card\nPassport"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval: doc.identity_document==\"ID Card\"",
+   "fieldname": "id_card_section",
+   "fieldtype": "Section Break",
+   "label": "ID Card"
+  },
+  {
+   "fieldname": "idcard_nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Country"
+  },
+  {
+   "fieldname": "idcard_personalidnum",
+   "fieldtype": "Data",
+   "label": "Personal ID No"
+  },
+  {
+   "fieldname": "idcard_dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "idcard_cityofbirth",
+   "fieldtype": "Data",
+   "label": "City of Birth"
+  },
+  {
+   "fieldname": "idcard_countryofbirth",
+   "fieldtype": "Data",
+   "label": "Country of Birth"
+  },
+  {
+   "fieldname": "idcard_gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "idcard_dateofissue",
+   "fieldtype": "Date",
+   "label": "Date of Issue"
+  },
+  {
+   "fieldname": "idcard_dateofexpiry",
+   "fieldtype": "Date",
+   "label": "Date of Expiry"
+  },
+  {
+   "fieldname": "idcard_issuedby",
+   "fieldtype": "Data",
+   "label": "Issued by"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval: doc.identity_document==\"Passport\"",
+   "fieldname": "passport_section",
+   "fieldtype": "Section Break",
+   "label": "Passport"
+  },
+  {
+   "fieldname": "passport_nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Country"
+  },
+  {
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "label": "Passport Number"
+  },
+  {
+   "fieldname": "passport_dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "passport_cityofbirth",
+   "fieldtype": "Data",
+   "label": "City of Birth"
+  },
+  {
+   "fieldname": "passport_countryofbirth",
+   "fieldtype": "Data",
+   "label": "Country of Birth"
+  },
+  {
+   "fieldname": "passport_gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "passport_dateofissue",
+   "fieldtype": "Date",
+   "label": "Date of Issue"
+  },
+  {
+   "fieldname": "passport_dateofexpiry",
+   "fieldtype": "Date",
+   "label": "Date of Expiry"
+  },
+  {
+   "fieldname": "passport_issuedby",
+   "fieldtype": "Data",
+   "label": "Issued By"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-05-20 10:59:26.188963",
+ "modified_by": "Administrator",
+ "module": "IT Service",
+ "name": "Consultant Documents",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

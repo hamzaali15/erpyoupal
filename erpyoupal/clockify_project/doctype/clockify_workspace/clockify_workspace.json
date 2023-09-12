@@ -1,0 +1,179 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:workspace_fullname",
+ "creation": "2022-05-26 13:15:26.139867",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "workspace_name",
+  "default_owner",
+  "organization",
+  "column_break_3",
+  "name_extension",
+  "workspace_fullname",
+  "section_break_2",
+  "erp_workspace_id",
+  "erp_workspace_name",
+  "erp_tags",
+  "erp_members",
+  "column_break_5",
+  "clockify_workspace_id",
+  "clockify_workspace_name",
+  "clockify_tags",
+  "clockify_members",
+  "pulled_from_clockify",
+  "timelog_restriction_section",
+  "enable_weekly_restriction",
+  "defined_restrictions",
+  "user_can_add_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "timelog_restriction_section",
+   "fieldtype": "Section Break",
+   "label": "Timelog Restriction"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_weekly_restriction",
+   "fieldtype": "Check",
+   "label": "Enable Weekly Timelog Restriction"
+  },
+  {
+   "fieldname": "defined_restrictions",
+   "fieldtype": "Table",
+   "label": "Restrictions",
+   "options": "Clockify Time Restrictions"
+  },
+  {
+   "fieldname": "erp_workspace_id",
+   "fieldtype": "Data",
+   "label": "ERP Workspace ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "erp_workspace_name",
+   "fieldtype": "Data",
+   "label": "ERP Workspace Name"
+  },
+  {
+   "fieldname": "erp_tags",
+   "fieldtype": "Table MultiSelect",
+   "label": "ERP Tags",
+   "options": "Clockify Tags"
+  },
+  {
+   "fieldname": "erp_members",
+   "fieldtype": "Long Text",
+   "label": "ERP Members"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clockify_workspace_id",
+   "fieldtype": "Data",
+   "label": "Clockify Workspace ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clockify_workspace_name",
+   "fieldtype": "Data",
+   "label": "Clockify Workspace Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clockify_tags",
+   "fieldtype": "Table MultiSelect",
+   "label": "Clockify Tags",
+   "options": "Clockify Tags",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clockify_members",
+   "fieldtype": "Text",
+   "label": "Clockify Members",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "pulled_from_clockify",
+   "fieldtype": "Check",
+   "label": "Pulled From Clockify",
+   "read_only": 1
+  },
+  {
+   "fieldname": "workspace_name",
+   "fieldtype": "Data",
+   "label": "Workspace Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "name_extension",
+   "fieldtype": "Data",
+   "label": "Name Extension",
+   "read_only": 1
+  },
+  {
+   "fieldname": "workspace_fullname",
+   "fieldtype": "Data",
+   "label": "Workspace Fullname",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_owner",
+   "fieldtype": "Link",
+   "label": "Default Owner",
+   "options": "Clockify User"
+  },
+  {
+   "default": "0",
+   "fieldname": "user_can_add_time",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "user can add time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Link",
+   "label": "Organization",
+   "options": "Organizations"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-24 11:36:10.130118",
+ "modified_by": "Administrator",
+ "module": "Clockify Project",
+ "name": "Clockify Workspace",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

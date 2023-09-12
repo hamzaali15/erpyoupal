@@ -1,0 +1,35 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-02-01 11:45:50.110132",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "contract",
+  "contract_expiry_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "contract",
+   "fieldtype": "Attach",
+   "label": "Contract"
+  },
+  {
+   "fieldname": "contract_expiry_date",
+   "fieldtype": "Date",
+   "label": "Contract expiry date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-03-24 11:56:12.235848",
+ "modified_by": "Administrator",
+ "module": "IT Service",
+ "name": "Contracts Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

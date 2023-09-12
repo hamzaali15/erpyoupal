@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-11 13:44:08.233454",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assessment_title",
+  "assessment_id",
+  "assessment_public_link",
+  "score",
+  "rating",
+  "status",
+  "email_sent"
+ ],
+ "fields": [
+  {
+   "fieldname": "score",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Score"
+  },
+  {
+   "default": "invited",
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status"
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "email_sent",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Email Sent"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "in_list_view": 1,
+   "label": "Rating"
+  },
+  {
+   "fieldname": "assessment_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Assessment Title"
+  },
+  {
+   "fieldname": "assessment_id",
+   "fieldtype": "Data",
+   "label": "Assessment ID"
+  },
+  {
+   "fieldname": "assessment_public_link",
+   "fieldtype": "Data",
+   "label": "Assessment Public Link"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-05-12 11:50:01.098357",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Skill Test Questionnaire",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

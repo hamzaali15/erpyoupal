@@ -1,0 +1,361 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-12 17:58:19.031711",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "it_consultant",
+  "job_applicant",
+  "applicant_name",
+  "column_break_3",
+  "email",
+  "status",
+  "section_break_4",
+  "token_generated",
+  "country",
+  "platform",
+  "column_break_7",
+  "person_scan_reference",
+  "scan_reference",
+  "document_section",
+  "document_type",
+  "document_number",
+  "document_first_name",
+  "document_last_name",
+  "document_full_name",
+  "document_date_of_issue",
+  "column_break_20",
+  "document_personal_code",
+  "document_date_of_birth",
+  "document_birth_place",
+  "document_sex",
+  "document_issuing_country",
+  "document_nationality",
+  "document_address",
+  "identification_section",
+  "identification_status",
+  "id_type",
+  "id_number",
+  "id_first_name",
+  "id_last_name",
+  "column_break_34",
+  "id_nationality",
+  "id_date_of_birth",
+  "id_sex",
+  "id_personal_code",
+  "id_expiry",
+  "client_section",
+  "client_id",
+  "client_ip",
+  "column_break_29",
+  "client_ip_country",
+  "client_location",
+  "file_urls_section",
+  "face",
+  "front",
+  "back",
+  "file_urls",
+  "pdf_link",
+  "public_printview_link"
+ ],
+ "fields": [
+  {
+   "fieldname": "it_consultant",
+   "fieldtype": "Link",
+   "label": "IT Consultant",
+   "options": "IT Consultant"
+  },
+  {
+   "fieldname": "job_applicant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Applicant",
+   "options": "Job Applicant"
+  },
+  {
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "label": "Applicant Name"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPending\nCompleted"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "token_generated",
+   "fieldtype": "Data",
+   "label": "Token Generated"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "platform",
+   "fieldtype": "Data",
+   "label": "Platform"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "person_scan_reference",
+   "fieldtype": "Data",
+   "label": "Person Scan Reference"
+  },
+  {
+   "fieldname": "scan_reference",
+   "fieldtype": "Data",
+   "label": "Scan Reference"
+  },
+  {
+   "fieldname": "document_section",
+   "fieldtype": "Section Break",
+   "label": "Document"
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Data",
+   "label": "Document Type"
+  },
+  {
+   "fieldname": "document_number",
+   "fieldtype": "Data",
+   "label": "Document Number"
+  },
+  {
+   "fieldname": "document_first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "document_last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "document_full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "document_date_of_issue",
+   "fieldtype": "Data",
+   "label": "Date of Issue"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document_personal_code",
+   "fieldtype": "Data",
+   "label": "Document Personal Code"
+  },
+  {
+   "fieldname": "document_date_of_birth",
+   "fieldtype": "Data",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "document_birth_place",
+   "fieldtype": "Data",
+   "label": "Birth Place"
+  },
+  {
+   "fieldname": "document_sex",
+   "fieldtype": "Data",
+   "label": "Sex"
+  },
+  {
+   "fieldname": "document_issuing_country",
+   "fieldtype": "Data",
+   "label": "Issuing Country"
+  },
+  {
+   "fieldname": "document_nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "document_address",
+   "fieldtype": "Text",
+   "label": "Address"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "identification_section",
+   "fieldtype": "Section Break",
+   "label": "Identification"
+  },
+  {
+   "fieldname": "identification_status",
+   "fieldtype": "Data",
+   "label": "Identification Status"
+  },
+  {
+   "fieldname": "id_type",
+   "fieldtype": "Data",
+   "label": "ID Type"
+  },
+  {
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "label": "ID Number"
+  },
+  {
+   "fieldname": "id_first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "id_last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "id_nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "id_date_of_birth",
+   "fieldtype": "Data",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "id_sex",
+   "fieldtype": "Data",
+   "label": "Sex"
+  },
+  {
+   "fieldname": "id_personal_code",
+   "fieldtype": "Data",
+   "label": "ID Personal Code"
+  },
+  {
+   "fieldname": "id_expiry",
+   "fieldtype": "Data",
+   "label": "ID Expiry"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "client_section",
+   "fieldtype": "Section Break",
+   "label": "Client"
+  },
+  {
+   "fieldname": "client_id",
+   "fieldtype": "Data",
+   "label": "Client ID"
+  },
+  {
+   "fieldname": "client_ip",
+   "fieldtype": "Data",
+   "label": "Client IP"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client_ip_country",
+   "fieldtype": "Data",
+   "label": "Client IP Country"
+  },
+  {
+   "fieldname": "client_location",
+   "fieldtype": "Data",
+   "label": "Client Location"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "file_urls_section",
+   "fieldtype": "Section Break",
+   "label": "Files"
+  },
+  {
+   "fieldname": "face",
+   "fieldtype": "Attach",
+   "label": "Face"
+  },
+  {
+   "fieldname": "front",
+   "fieldtype": "Attach",
+   "label": "Front"
+  },
+  {
+   "fieldname": "back",
+   "fieldtype": "Attach",
+   "label": "Back"
+  },
+  {
+   "fieldname": "file_urls",
+   "fieldtype": "Table",
+   "label": "File URLs",
+   "options": "Background Check File Table",
+   "read_only": 1
+  },
+  {
+   "fieldname": "pdf_link",
+   "fieldtype": "Text",
+   "label": "Printview Link",
+   "read_only": 1
+  },
+  {
+   "fieldname": "public_printview_link",
+   "fieldtype": "Text",
+   "label": "Public Printview Link",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-29 06:07:35.775241",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Background Check",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "email"
+}

@@ -1,0 +1,214 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-21 13:26:36.696342",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "unparsed_resume",
+  "requested_from_portal",
+  "parsing_usage_log",
+  "column_break_3",
+  "it_consultant",
+  "update_it_consultant",
+  "section_break_3",
+  "info",
+  "resume_data",
+  "contact_information",
+  "personal_attributes",
+  "education",
+  "employment_history",
+  "skills_data",
+  "skills",
+  "certifications",
+  "licenses",
+  "associations",
+  "language_competencies",
+  "military_experience",
+  "security_credentials",
+  "references",
+  "achievements",
+  "training",
+  "resume_metadata",
+  "user_defined_tags"
+ ],
+ "fields": [
+  {
+   "fieldname": "unparsed_resume",
+   "fieldtype": "Attach",
+   "label": "Unparsed Resume"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "label": "Parsing Result"
+  },
+  {
+   "fieldname": "info",
+   "fieldtype": "Text",
+   "label": "Info",
+   "read_only": 1
+  },
+  {
+   "fieldname": "resume_data",
+   "fieldtype": "Text",
+   "label": "Resume Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "it_consultant",
+   "fieldtype": "Link",
+   "label": "IT Consultant",
+   "options": "IT Consultant"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "update_it_consultant",
+   "fieldtype": "Check",
+   "label": "Update IT Consultant"
+  },
+  {
+   "fieldname": "contact_information",
+   "fieldtype": "Text",
+   "label": "Contact Information",
+   "read_only": 1
+  },
+  {
+   "fieldname": "personal_attributes",
+   "fieldtype": "Text",
+   "label": "Personal Attributes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "education",
+   "fieldtype": "Text",
+   "label": "Education",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employment_history",
+   "fieldtype": "Text",
+   "label": "Employment History",
+   "read_only": 1
+  },
+  {
+   "fieldname": "skills_data",
+   "fieldtype": "Text",
+   "label": "Skills Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "skills",
+   "fieldtype": "Text",
+   "label": "Skills",
+   "read_only": 1
+  },
+  {
+   "fieldname": "certifications",
+   "fieldtype": "Text",
+   "label": "Certifications",
+   "read_only": 1
+  },
+  {
+   "fieldname": "licenses",
+   "fieldtype": "Text",
+   "label": "Licenses",
+   "read_only": 1
+  },
+  {
+   "fieldname": "associations",
+   "fieldtype": "Text",
+   "label": "Associations",
+   "read_only": 1
+  },
+  {
+   "fieldname": "language_competencies",
+   "fieldtype": "Text",
+   "label": "Language Competencies",
+   "read_only": 1
+  },
+  {
+   "fieldname": "military_experience",
+   "fieldtype": "Text",
+   "label": "Military Experience",
+   "read_only": 1
+  },
+  {
+   "fieldname": "security_credentials",
+   "fieldtype": "Text",
+   "label": "Security Credentials",
+   "read_only": 1
+  },
+  {
+   "fieldname": "references",
+   "fieldtype": "Text",
+   "label": "References",
+   "read_only": 1
+  },
+  {
+   "fieldname": "achievements",
+   "fieldtype": "Text",
+   "label": "Achievements",
+   "read_only": 1
+  },
+  {
+   "fieldname": "training",
+   "fieldtype": "Text",
+   "label": "Training",
+   "read_only": 1
+  },
+  {
+   "fieldname": "resume_metadata",
+   "fieldtype": "Text",
+   "label": "Resume Metadata",
+   "read_only": 1
+  },
+  {
+   "fieldname": "user_defined_tags",
+   "fieldtype": "Text",
+   "label": "User Defined Tags",
+   "read_only": 1
+  },
+  {
+   "fieldname": "parsing_usage_log",
+   "fieldtype": "Data",
+   "label": "Parsing usage Log",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_from_portal",
+   "fieldtype": "Select",
+   "label": "Requested from Portal",
+   "options": "\nTalent\nPartner\nClient"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-28 14:00:16.311235",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Resume Parsing",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "it_consultant"
+}

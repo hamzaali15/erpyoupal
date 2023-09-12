@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-01 18:25:02.873080",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "it_consultant",
+  "stages",
+  "candidate_source"
+ ],
+ "fields": [
+  {
+   "fieldname": "it_consultant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "IT Consultant",
+   "options": "IT Consultant",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "stages",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Stages",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "candidate_source",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Candidate Source",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-29 06:47:16.490703",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Lead Custom Candidates",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

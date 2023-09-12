@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-13 14:34:10.543008",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "google_drive_file_url",
+  "google_drive_file_id",
+  "google_drive_file",
+  "file_download_status",
+  "section_break_5",
+  "parse_file",
+  "parsed_file",
+  "date_parsed",
+  "confidence_level",
+  "section_break_10",
+  "email",
+  "it_consultant",
+  "job_applicant"
+ ],
+ "fields": [
+  {
+   "fieldname": "google_drive_file_url",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Google Drive File URL",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "google_drive_file_id",
+   "fieldtype": "Data",
+   "label": "Google Drive File ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "google_drive_file",
+   "fieldtype": "Attach",
+   "label": "Google Drive File",
+   "read_only": 1
+  },
+  {
+   "fieldname": "file_download_status",
+   "fieldtype": "Data",
+   "label": "File Download Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "parse_file",
+   "fieldtype": "Check",
+   "label": "Parse File"
+  },
+  {
+   "fieldname": "parsed_file",
+   "fieldtype": "Text",
+   "label": "Parsed File",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_parsed",
+   "fieldtype": "Datetime",
+   "label": "Date Parsed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "confidence_level",
+   "fieldtype": "Data",
+   "label": "Confidence Level",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "it_consultant",
+   "fieldtype": "Link",
+   "label": "IT Consultant",
+   "options": "IT Consultant",
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_applicant",
+   "fieldtype": "Link",
+   "label": "Job Applicant",
+   "options": "Job Applicant",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-29 06:35:25.079217",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Google Drive Resume",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

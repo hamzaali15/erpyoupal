@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "OFL.#####",
+ "creation": "2022-06-17 12:24:17.226167",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "oneflow_workspace_id",
+  "oneflow_workspace_name",
+  "title",
+  "column_break_4",
+  "oneflow_template_id",
+  "oneflow_template_name",
+  "user_email",
+  "section_break_8",
+  "oneflow_contract_id",
+  "contract_state",
+  "participants"
+ ],
+ "fields": [
+  {
+   "default": "423427",
+   "fieldname": "oneflow_workspace_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Workspace ID",
+   "options": "OneFlow Workspace",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "oneflow_workspace_id.workspace_name",
+   "fieldname": "oneflow_workspace_name",
+   "fieldtype": "Read Only",
+   "label": "Workspace Name"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "OFT00024",
+   "fieldname": "oneflow_template_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Template ID",
+   "options": "OneFlow Template",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "oneflow_template_id.template_title",
+   "fieldname": "oneflow_template_name",
+   "fieldtype": "Read Only",
+   "label": "Template Name"
+  },
+  {
+   "fieldname": "user_email",
+   "fieldtype": "Data",
+   "label": "User Email",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "oneflow_contract_id",
+   "fieldtype": "Read Only",
+   "label": "OneFlow Contract ID"
+  },
+  {
+   "fieldname": "contract_state",
+   "fieldtype": "Read Only",
+   "label": "Contract State"
+  },
+  {
+   "fieldname": "participants",
+   "fieldtype": "Table",
+   "label": "Participants",
+   "options": "OneFlow Legal Participant",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-29 06:53:25.649980",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "OneFlow Legal",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title"
+}

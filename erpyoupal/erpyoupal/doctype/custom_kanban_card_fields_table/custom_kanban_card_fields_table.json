@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "creation": "2022-03-08 10:53:27.104363",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fieldname",
+  "fieldlabel",
+  "fieldtype",
+  "font_size_px",
+  "bold_font"
+ ],
+ "fields": [
+  {
+   "fieldname": "fieldname",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Fieldname"
+  },
+  {
+   "fieldname": "fieldlabel",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Fieldlabel"
+  },
+  {
+   "fieldname": "fieldtype",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Fieldtype"
+  },
+  {
+   "default": "12",
+   "fieldname": "font_size_px",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Font Size (px)"
+  },
+  {
+   "default": "0",
+   "fieldname": "bold_font",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Bold Font"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-29 06:31:14.792091",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Custom Kanban Card Fields Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,293 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:project_fullname",
+ "creation": "2022-05-26 17:56:12.499181",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "workspace",
+  "project_fullname",
+  "organization",
+  "column_break_3",
+  "project_name",
+  "name_extension",
+  "section_break_3",
+  "erp_project_id",
+  "erp_project_name",
+  "archive",
+  "column_break_6",
+  "clockify_project_id",
+  "clockify_project_name",
+  "pulled_from_clockify",
+  "sync_with_clockify",
+  "section_break_11",
+  "visibility",
+  "color",
+  "note",
+  "column_break_5",
+  "billable",
+  "project_billable_rate",
+  "total_cost",
+  "project_estimate",
+  "total_billable_hours",
+  "total_hours_consumed",
+  "client",
+  "section_break_5",
+  "erp_members",
+  "section_break_7",
+  "erp_tasks",
+  "section_break_25",
+  "clockify_members",
+  "section_break_27",
+  "clockify_tasks",
+  "section_break_36",
+  "consultant_feedback_questions",
+  "is_feedback_submitted"
+ ],
+ "fields": [
+  {
+   "default": "Public",
+   "fieldname": "visibility",
+   "fieldtype": "Select",
+   "label": "Visibility",
+   "options": "\nPublic\nPrivate"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "billable",
+   "fieldtype": "Check",
+   "label": "Billable"
+  },
+  {
+   "fieldname": "project_billable_rate",
+   "fieldtype": "Float",
+   "label": "Project billable rate"
+  },
+  {
+   "fieldname": "project_estimate",
+   "fieldtype": "Select",
+   "label": "Project estimate",
+   "options": "\nNo estimate\nTime Estimate"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "workspace",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Workspace",
+   "options": "Clockify Workspace",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "archive",
+   "fieldtype": "Check",
+   "label": "Archive"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "erp_project_id",
+   "fieldtype": "Data",
+   "label": "Project ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "erp_project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clockify_project_id",
+   "fieldtype": "Data",
+   "label": "Clockify Project ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clockify_project_name",
+   "fieldtype": "Data",
+   "label": "Clockify Project Name",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "pulled_from_clockify",
+   "fieldtype": "Check",
+   "label": "Pulled From Clockify",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "sync_with_clockify",
+   "fieldtype": "Check",
+   "label": "Sync with Clockify"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "erp_tasks",
+   "fieldtype": "Table",
+   "label": "Tasks",
+   "options": "Clockify Task Table"
+  },
+  {
+   "fieldname": "erp_members",
+   "fieldtype": "Table",
+   "label": "Members",
+   "options": "Clockify Project Members"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "clockify_tasks",
+   "fieldtype": "Table",
+   "label": "Clockify Tasks",
+   "options": "Clockify Task Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_27",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "clockify_members",
+   "fieldtype": "Table",
+   "label": "Clockify Members",
+   "options": "Clockify Project Members",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_fullname",
+   "fieldtype": "Data",
+   "label": "Project Fullname",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "name_extension",
+   "fieldtype": "Data",
+   "label": "Name Extension",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.project_estimate==\"Time Estimate\";",
+   "fieldname": "total_billable_hours",
+   "fieldtype": "Float",
+   "label": "Total Billable Hours"
+  },
+  {
+   "depends_on": "eval:doc.project_estimate==\"Time Estimate\";",
+   "fieldname": "total_hours_consumed",
+   "fieldtype": "Float",
+   "label": "Total Hours Consumed"
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Link",
+   "label": "Organization",
+   "options": "Organizations"
+  },
+  {
+   "fieldname": "section_break_36",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "consultant_feedback_questions",
+   "fieldtype": "Table",
+   "label": "Consultant Feedback Questions",
+   "options": "Consultant Feedback Questions"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_feedback_submitted",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "is_feedback_submitted",
+   "no_copy": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-10 17:40:12.161974",
+ "modified_by": "Administrator",
+ "module": "Clockify Project",
+ "name": "Clockify Projects",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "project_name"
+}

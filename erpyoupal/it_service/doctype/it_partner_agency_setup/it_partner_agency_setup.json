@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-21 16:37:42.632595",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "default_socials",
+  "column_break_2",
+  "default_platforms"
+ ],
+ "fields": [
+  {
+   "fieldname": "default_socials",
+   "fieldtype": "Table",
+   "label": "Default Socials",
+   "options": "Socials"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_platforms",
+   "fieldtype": "Table",
+   "label": "Default Platforms",
+   "options": "Platforms"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-03-24 11:55:26.855895",
+ "modified_by": "Administrator",
+ "module": "IT Service",
+ "name": "IT Partner Agency Setup",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

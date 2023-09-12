@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-26 14:16:39.868977",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task",
+  "task_name",
+  "status",
+  "column_break_5",
+  "assignees",
+  "estimated_hours",
+  "total_hours_spent"
+ ],
+ "fields": [
+  {
+   "fieldname": "task",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Task",
+   "options": "Clockify Task"
+  },
+  {
+   "fetch_from": "task_id.assignees",
+   "fieldname": "assignees",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Assignees"
+  },
+  {
+   "fetch_from": "task_id.status",
+   "fieldname": "status",
+   "fieldtype": "Read Only",
+   "label": "Status"
+  },
+  {
+   "fieldname": "total_hours_spent",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Hours Spent"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "task_id.task",
+   "fieldname": "task_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Task Name"
+  },
+  {
+   "fieldname": "estimated_hours",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Estimated Hours"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-08-05 12:52:12.603247",
+ "modified_by": "Administrator",
+ "module": "Clockify Project",
+ "name": "Clockify Task Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,226 @@
+{
+ "actions": [],
+ "creation": "2022-05-26 13:25:27.494875",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "workspace",
+  "clockify_user",
+  "full_name",
+  "project",
+  "client",
+  "task",
+  "tags",
+  "description",
+  "manager",
+  "column_break_7",
+  "erp_timelog_id",
+  "clockify_timelog_id",
+  "time_in",
+  "time_out",
+  "week_number",
+  "total_time",
+  "total_hours",
+  "total_seconds",
+  "hourly_rate",
+  "total_cost",
+  "billable",
+  "sync_with_clockify",
+  "locked",
+  "status",
+  "external_link",
+  "section_break_25",
+  "screenshots"
+ ],
+ "fields": [
+  {
+   "fieldname": "time_in",
+   "fieldtype": "Datetime",
+   "label": "Time In"
+  },
+  {
+   "fieldname": "time_out",
+   "fieldtype": "Datetime",
+   "label": "Time Out"
+  },
+  {
+   "default": "0",
+   "fieldname": "billable",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Billable"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Project",
+   "options": "Clockify Projects"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "tags",
+   "fieldtype": "Table MultiSelect",
+   "label": "Tags",
+   "options": "Clockify Tags"
+  },
+  {
+   "fieldname": "task",
+   "fieldtype": "Link",
+   "label": "Task",
+   "options": "Clockify Task"
+  },
+  {
+   "fieldname": "total_time",
+   "fieldtype": "Read Only",
+   "label": "Total Time"
+  },
+  {
+   "fieldname": "total_seconds",
+   "fieldtype": "Float",
+   "label": "Total Seconds",
+   "read_only": 1
+  },
+  {
+   "fieldname": "workspace",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Workspace",
+   "options": "Clockify Workspace"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "erp_timelog_id",
+   "fieldtype": "Data",
+   "label": "ERP Timelog ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clockify_timelog_id",
+   "fieldtype": "Data",
+   "label": "Clockify Timelog ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_hours",
+   "fieldtype": "Float",
+   "label": "Total Hours",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "sync_with_clockify",
+   "fieldtype": "Check",
+   "label": "Sync with Clockify"
+  },
+  {
+   "fieldname": "clockify_user",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "User",
+   "options": "Clockify User"
+  },
+  {
+   "fieldname": "hourly_rate",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Hourly Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Total Cost",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "locked",
+   "fieldtype": "Check",
+   "in_standard_filter": 1,
+   "label": "Locked"
+  },
+  {
+   "fieldname": "week_number",
+   "fieldtype": "Data",
+   "label": "Week Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "manager",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Manager"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Client",
+   "options": "Organizations"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "\nPending\nApproved\nDeclined"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break",
+   "label": "Screenshots"
+  },
+  {
+   "fieldname": "screenshots",
+   "fieldtype": "Table",
+   "label": "Attachments",
+   "options": "Clockify Timelog Attachments"
+  },
+  {
+   "fieldname": "external_link",
+   "fieldtype": "Small Text",
+   "label": "Link"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-05 08:58:24.597764",
+ "modified_by": "Administrator",
+ "module": "Clockify Project",
+ "name": "Clockify Timelog",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "full_name"
+}

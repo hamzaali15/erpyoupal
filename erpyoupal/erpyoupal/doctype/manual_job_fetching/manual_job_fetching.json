@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "creation": "2022-07-07 09:33:17.298793",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_name",
+  "country",
+  "posted_date_from",
+  "keywords",
+  "project_id",
+  "column_break_6",
+  "sources",
+  "offset",
+  "limit",
+  "with_description_only"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "posted_date_from",
+   "fieldtype": "Date",
+   "label": "Posted Date From"
+  },
+  {
+   "fieldname": "keywords",
+   "fieldtype": "Data",
+   "label": "Keywords"
+  },
+  {
+   "fieldname": "project_id",
+   "fieldtype": "Data",
+   "label": "Project ID"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sources",
+   "fieldtype": "Table MultiSelect",
+   "label": "Sources",
+   "options": "Scraped Jobs Source Table"
+  },
+  {
+   "fieldname": "offset",
+   "fieldtype": "Data",
+   "label": "Offset"
+  },
+  {
+   "default": "10",
+   "fieldname": "limit",
+   "fieldtype": "Data",
+   "label": "Limit"
+  },
+  {
+   "default": "0",
+   "fieldname": "with_description_only",
+   "fieldtype": "Check",
+   "label": "With Description Only"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-03-29 06:49:04.676935",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Manual Job Fetching",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

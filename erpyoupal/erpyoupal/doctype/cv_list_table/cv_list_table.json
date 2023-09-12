@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "creation": "2022-03-14 18:50:27.955748",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cv",
+  "parsed_json",
+  "to_parse_cv",
+  "last_date_parsed",
+  "confidence_level",
+  "it_consultant",
+  "create_it_consultant",
+  "cv_filled",
+  "consultant_manager"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "cv",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "CV",
+   "reqd": 1
+  },
+  {
+   "columns": 5,
+   "fieldname": "parsed_json",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Parsed JSON",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "to_parse_cv",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "To Parse CV",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "last_date_parsed",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Last Date Parsed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "confidence_level",
+   "fieldtype": "Data",
+   "label": "Confidence Level",
+   "read_only": 1
+  },
+  {
+   "fieldname": "it_consultant",
+   "fieldtype": "Link",
+   "label": "IT Consultant",
+   "options": "IT Consultant",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "create_it_consultant",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Create IT Consultant"
+  },
+  {
+   "default": "0",
+   "fieldname": "cv_filled",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "CV Filled"
+  },
+  {
+   "fieldname": "consultant_manager",
+   "fieldtype": "Read Only",
+   "label": "Consultant Manager"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-29 06:31:35.432861",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "CV List Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

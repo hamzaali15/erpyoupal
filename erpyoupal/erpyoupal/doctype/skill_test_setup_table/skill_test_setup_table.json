@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-11 13:36:17.321345",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "test_title",
+  "test_link",
+  "column_break_3",
+  "date_created",
+  "disabled",
+  "conditional_inclusion_section",
+  "item",
+  "column_break_7",
+  "condition",
+  "column_break_9",
+  "value",
+  "section_break_12",
+  "passing_score"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "test_link",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Test Link",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Read Only",
+   "label": "Date Created",
+   "reqd": 1
+  },
+  {
+   "fieldname": "conditional_inclusion_section",
+   "fieldtype": "Section Break",
+   "label": "Conditional Inclusion"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Select",
+   "label": "Item",
+   "options": "\nYears of Experience\nRating"
+  },
+  {
+   "fieldname": "condition",
+   "fieldtype": "Select",
+   "label": "Condition",
+   "options": "\n>\n>=\n=\n<\n<=\n!=",
+   "reqd": 1
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Data",
+   "label": "Value"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Disabled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "passing_score",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Passing Score",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-05-11 14:00:03.830980",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Skill Test Setup Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

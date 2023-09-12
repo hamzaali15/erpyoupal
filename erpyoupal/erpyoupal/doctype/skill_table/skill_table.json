@@ -1,0 +1,30 @@
+{
+ "actions": [],
+ "creation": "2022-07-25 16:08:56.791431",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "skill_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "skill_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Skill Name",
+   "options": "Skill",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-07-25 16:08:56.791431",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Skill Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

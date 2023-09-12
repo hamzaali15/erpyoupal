@@ -1,0 +1,767 @@
+{
+ "actions": [],
+ "allow_auto_repeat": 1,
+ "allow_events_in_timeline": 1,
+ "allow_rename": 1,
+ "creation": "2021-12-21 12:20:19.757574",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "applied_jobs",
+  "matched_jobs",
+  "column_break_3",
+  "in_progress_jobs",
+  "hired_jobs",
+  "column_break_6",
+  "rejected_jobs",
+  "it_consultant_name",
+  "basic_details_section",
+  "personal_id",
+  "position_title",
+  "first_name",
+  "last_name",
+  "full_name",
+  "mobile_primary",
+  "email_primary",
+  "email_secondary",
+  "image",
+  "column_break_8",
+  "date_of_birth",
+  "gender",
+  "status",
+  "verification",
+  "cv",
+  "resume",
+  "experience_since",
+  "total_experience",
+  "role",
+  "availability",
+  "candidate_interview",
+  "column_break_14",
+  "association",
+  "agency_name",
+  "rate_hourly",
+  "hourly_rate_lead_search",
+  "nda",
+  "location",
+  "data_protection",
+  "consultant_documents",
+  "video_interview",
+  "seniority",
+  "manual_talent_app_access",
+  "talent_app_access",
+  "work_preferences_section",
+  "work_preferences",
+  "work_type",
+  "work_destination",
+  "column_break_27",
+  "platform_social_media",
+  "summary_section",
+  "consultant_description",
+  "skills_section",
+  "skills",
+  "rating",
+  "column_break_44",
+  "skills_benchmark",
+  "test_score",
+  "test_link",
+  "assessment_score",
+  "assessment_link",
+  "experience_profile_section",
+  "experience",
+  "portfolio_link",
+  "auto_repeat",
+  "education_section",
+  "degrees",
+  "languages_section",
+  "language_proficiency_level",
+  "section_break_23",
+  "height",
+  "allergies",
+  "food_preferences",
+  "passport_section",
+  "passport_nationality",
+  "passport_number",
+  "passport_dob",
+  "passport_cityofbirth",
+  "passport_countryofbirth",
+  "passport_gender",
+  "passport_dateofissue",
+  "passport_dateofexpiry",
+  "passport_issuedby",
+  "passport_visatype",
+  "address_and_contacts_section",
+  "address",
+  "emergency_contact_section",
+  "emergency_contact_name",
+  "emergency_contact_email",
+  "emergency_contact_mobile",
+  "column_break_111",
+  "relationship_name",
+  "relationship",
+  "children",
+  "section_break_90",
+  "recommendations",
+  "repositories_section",
+  "repositories",
+  "job_application_record_section",
+  "job_applicant_history",
+  "self_evaluation_history",
+  "skill_test_history",
+  "skill_test_coderbyte_history",
+  "persona_test_history",
+  "background_check_history",
+  "video_interview_history",
+  "candidate_interview_history"
+ ],
+ "fields": [
+  {
+   "collapsible": 1,
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "personal_id",
+   "fieldtype": "Data",
+   "label": "Personal ID"
+  },
+  {
+   "fieldname": "position_title",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Position Title"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "mobile_primary",
+   "fieldtype": "Data",
+   "label": "Mobile (Primary)",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email_primary",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "label": "Email (Primary)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_secondary",
+   "fieldtype": "Data",
+   "label": "Email (Secondary)"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive\nSeperated"
+  },
+  {
+   "fieldname": "verification",
+   "fieldtype": "Select",
+   "label": "Verification",
+   "options": "Unknown\nApplicant\nVetted\nProven"
+  },
+  {
+   "fieldname": "cv",
+   "fieldtype": "Attach",
+   "hidden": 1,
+   "label": "CV"
+  },
+  {
+   "fieldname": "resume",
+   "fieldtype": "Attach",
+   "label": "Resume"
+  },
+  {
+   "fieldname": "experience_since",
+   "fieldtype": "Link",
+   "label": "Experience Since",
+   "options": "Year"
+  },
+  {
+   "fieldname": "total_experience",
+   "fieldtype": "Data",
+   "label": "Total Experience",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "association",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Association",
+   "options": "Contractor\nEmployed\nAgency"
+  },
+  {
+   "fieldname": "agency_name",
+   "fieldtype": "Data",
+   "label": "Agency Name"
+  },
+  {
+   "fieldname": "rate_hourly",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rate (Hourly)"
+  },
+  {
+   "fieldname": "hourly_rate_lead_search",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_standard_filter": 1,
+   "label": "Rate (Hourly)",
+   "options": "\n10-19\n20-29\n30-39\n40-49\n50-99\n100+"
+  },
+  {
+   "fieldname": "nda",
+   "fieldtype": "Select",
+   "label": "NDA",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "data_protection",
+   "fieldtype": "Select",
+   "label": "Data Protection",
+   "options": "\nInside EEA\nOutside EEA | GDPR Safe\nOutside EEA | GDPR Unsafe"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "work_preferences_section",
+   "fieldtype": "Section Break",
+   "label": "Preferences"
+  },
+  {
+   "fieldname": "work_preferences",
+   "fieldtype": "Heading",
+   "label": "Work Preferences"
+  },
+  {
+   "fieldname": "work_type",
+   "fieldtype": "Select",
+   "label": "Work Type",
+   "options": "Remote\nOnsite\nRotation"
+  },
+  {
+   "fieldname": "work_destination",
+   "fieldtype": "Select",
+   "label": "Work Destination",
+   "options": "National\nInternational"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "summary_section",
+   "fieldtype": "Section Break",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "consultant_description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "skills_section",
+   "fieldtype": "Section Break",
+   "label": "Skills"
+  },
+  {
+   "fieldname": "skills",
+   "fieldtype": "Table MultiSelect",
+   "in_standard_filter": 1,
+   "label": "Skills",
+   "options": "Skill Item"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "skills_benchmark",
+   "fieldtype": "Heading",
+   "label": "Skills Benchmark"
+  },
+  {
+   "fieldname": "test_score",
+   "fieldtype": "Data",
+   "label": "Test Score"
+  },
+  {
+   "fieldname": "test_link",
+   "fieldtype": "Attach",
+   "label": "Test Link"
+  },
+  {
+   "fieldname": "assessment_score",
+   "fieldtype": "Data",
+   "label": "Assessment Score"
+  },
+  {
+   "fieldname": "assessment_link",
+   "fieldtype": "Attach",
+   "label": "Assessment Link"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "experience_profile_section",
+   "fieldtype": "Section Break",
+   "label": "Experience"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Table",
+   "label": "Experience",
+   "options": "IT Experience Item"
+  },
+  {
+   "fieldname": "portfolio_link",
+   "fieldtype": "Attach",
+   "label": "Portfolio Link"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "education_section",
+   "fieldtype": "Section Break",
+   "label": "Education"
+  },
+  {
+   "fieldname": "degrees",
+   "fieldtype": "Table",
+   "label": "Degrees",
+   "options": "Employee Education"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "languages_section",
+   "fieldtype": "Section Break",
+   "label": "Languages"
+  },
+  {
+   "fieldname": "language_proficiency_level",
+   "fieldtype": "Table",
+   "label": "Language Proficiency Level",
+   "options": "Languages Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break",
+   "label": "Personal Preferences"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Data",
+   "label": "Height"
+  },
+  {
+   "fieldname": "allergies",
+   "fieldtype": "Small Text",
+   "label": "Allergies"
+  },
+  {
+   "fieldname": "food_preferences",
+   "fieldtype": "Small Text",
+   "label": "Food Preferences"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval: doc.identity_document==\"Passport\"",
+   "fieldname": "passport_section",
+   "fieldtype": "Section Break",
+   "label": "Passport"
+  },
+  {
+   "fieldname": "passport_nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Country"
+  },
+  {
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "label": "Passport Number"
+  },
+  {
+   "fieldname": "passport_dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "passport_cityofbirth",
+   "fieldtype": "Data",
+   "label": "City of Birth"
+  },
+  {
+   "fieldname": "passport_countryofbirth",
+   "fieldtype": "Data",
+   "label": "Country of Birth"
+  },
+  {
+   "fieldname": "passport_gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "passport_dateofissue",
+   "fieldtype": "Date",
+   "label": "Date of Issue"
+  },
+  {
+   "fieldname": "passport_dateofexpiry",
+   "fieldtype": "Date",
+   "label": "Date of Expiry"
+  },
+  {
+   "fieldname": "passport_issuedby",
+   "fieldtype": "Data",
+   "label": "Issued By"
+  },
+  {
+   "fieldname": "passport_visatype",
+   "fieldtype": "Data",
+   "label": "Visa Type"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "address_and_contacts_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "emergency_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Emergency Contact"
+  },
+  {
+   "fieldname": "emergency_contact_name",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "emergency_contact_email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "emergency_contact_mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "column_break_111",
+   "fieldtype": "Column Break",
+   "label": "2nd Contact Person"
+  },
+  {
+   "fieldname": "relationship_name",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "relationship",
+   "fieldtype": "Data",
+   "label": "Relationship"
+  },
+  {
+   "fieldname": "children",
+   "fieldtype": "Data",
+   "label": "Children"
+  },
+  {
+   "fieldname": "candidate_interview",
+   "fieldtype": "Data",
+   "label": "Candidate Interview"
+  },
+  {
+   "fieldname": "consultant_documents",
+   "fieldtype": "Link",
+   "label": "Consultant Documents",
+   "options": "Consultant Documents"
+  },
+  {
+   "fieldname": "video_interview",
+   "fieldtype": "Data",
+   "label": "Video Interview"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "job_application_record_section",
+   "fieldtype": "Section Break",
+   "label": "Job Application Record"
+  },
+  {
+   "fieldname": "job_applicant_history",
+   "fieldtype": "Table",
+   "label": "Job Applicant History",
+   "options": "Job Applicant History"
+  },
+  {
+   "fieldname": "self_evaluation_history",
+   "fieldtype": "Table",
+   "label": "Self Evaluation History",
+   "options": "Self Evaluation History"
+  },
+  {
+   "fieldname": "skill_test_history",
+   "fieldtype": "Table",
+   "label": "Skill Test History",
+   "options": "Skill Test History"
+  },
+  {
+   "fieldname": "persona_test_history",
+   "fieldtype": "Table",
+   "label": "Persona Test History",
+   "options": "Persona Test History"
+  },
+  {
+   "fieldname": "background_check_history",
+   "fieldtype": "Table",
+   "label": "Background Check History",
+   "options": "Background Check History"
+  },
+  {
+   "fieldname": "video_interview_history",
+   "fieldtype": "Table",
+   "label": "Video Interview History",
+   "options": "Video Interview History"
+  },
+  {
+   "fieldname": "candidate_interview_history",
+   "fieldtype": "Table",
+   "label": "Candidate Interview History",
+   "options": "Candidate Interview History"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "platform_social_media",
+   "fieldtype": "Table",
+   "label": "Platform / Social Media",
+   "options": "Social Platform Table"
+  },
+  {
+   "fieldname": "skill_test_coderbyte_history",
+   "fieldtype": "Table",
+   "label": "Skill Test Coderbyte History",
+   "options": "Skill Test Coderbyte History"
+  },
+  {
+   "default": "0",
+   "fieldname": "talent_app_access",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "With Talent App Access",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "manual_talent_app_access",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Manual Talent App Access"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_90",
+   "fieldtype": "Section Break",
+   "label": "Recommendations"
+  },
+  {
+   "fieldname": "recommendations",
+   "fieldtype": "Table",
+   "label": "Recommendations",
+   "options": "Recommendations"
+  },
+  {
+   "fieldname": "repositories",
+   "fieldtype": "Table",
+   "label": "Repositories",
+   "options": "Repositories"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Role"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "repositories_section",
+   "fieldtype": "Section Break",
+   "label": "Repositories"
+  },
+  {
+   "fieldname": "availability",
+   "fieldtype": "Data",
+   "label": "Availability"
+  },
+  {
+   "fieldname": "it_consultant_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_global_search": 1,
+   "label": "IT Consultant Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "auto_repeat",
+   "fieldtype": "Link",
+   "label": "Auto Repeat",
+   "no_copy": 1,
+   "options": "Auto Repeat",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "seniority",
+   "fieldtype": "Select",
+   "label": "Seniority",
+   "options": "\nEntry (0-1 years)\nJunior (1-3 years)\nMiddle (4-6 years)\nSenior (6-8 years)\nExpert (8+ years)"
+  },
+  {
+   "fieldname": "applied_jobs",
+   "fieldtype": "Int",
+   "label": "Applied Jobs",
+   "read_only": 1
+  },
+  {
+   "fieldname": "matched_jobs",
+   "fieldtype": "Int",
+   "label": "Matched Jobs",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "in_progress_jobs",
+   "fieldtype": "Int",
+   "label": "In Progress Jobs",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hired_jobs",
+   "fieldtype": "Int",
+   "label": "Hired Jobs",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rejected_jobs",
+   "fieldtype": "Int",
+   "label": "Rejected Jobs",
+   "read_only": 1
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-19 11:52:15.511153",
+ "modified_by": "Administrator",
+ "module": "IT Service",
+ "name": "IT Consultant",
+ "name_case": "Title Case",
+ "nsm_parent_field": "parent_it_consultant",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "full_name"
+}

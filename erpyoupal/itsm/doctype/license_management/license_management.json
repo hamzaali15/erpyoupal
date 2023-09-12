@@ -1,0 +1,150 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {software_name}-{#####}",
+ "creation": "2022-05-02 16:13:16.937959",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "software_name",
+  "column_break_2",
+  "url",
+  "section_break_4",
+  "category",
+  "product_key",
+  "seats",
+  "licensed_to_name",
+  "licensed_to_email",
+  "reassignable",
+  "purchase_cost",
+  "purchase_date",
+  "expiration_date",
+  "due_date",
+  "notes",
+  "seats_section",
+  "license_seats"
+ ],
+ "fields": [
+  {
+   "fieldname": "software_name",
+   "fieldtype": "Data",
+   "label": "Software Name"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "URL",
+   "options": "URL"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Category",
+   "options": "License Category"
+  },
+  {
+   "fieldname": "product_key",
+   "fieldtype": "Small Text",
+   "label": "Product Key"
+  },
+  {
+   "fieldname": "seats",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Seats"
+  },
+  {
+   "fieldname": "licensed_to_name",
+   "fieldtype": "Data",
+   "label": "Licensed to Name"
+  },
+  {
+   "fieldname": "licensed_to_email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Licensed to Email",
+   "options": "Email"
+  },
+  {
+   "default": "0",
+   "fieldname": "reassignable",
+   "fieldtype": "Check",
+   "label": "Reassignable"
+  },
+  {
+   "fieldname": "purchase_cost",
+   "fieldtype": "Currency",
+   "label": "Purchase Cost",
+   "precision": "0"
+  },
+  {
+   "fieldname": "purchase_date",
+   "fieldtype": "Date",
+   "label": "Purchase Date"
+  },
+  {
+   "fieldname": "expiration_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expiration Date"
+  },
+  {
+   "description": "When do you want to receive a Notification about expiry of this License?  IF NO DUE Date is set, Notification will be sent 7 days before expiry date.",
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  },
+  {
+   "depends_on": "seats",
+   "fieldname": "seats_section",
+   "fieldtype": "Section Break",
+   "label": "Seats"
+  },
+  {
+   "fieldname": "license_seats",
+   "fieldtype": "Table",
+   "options": "License Seats"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-05-27 13:18:10.667322",
+ "modified_by": "Administrator",
+ "module": "ITSM",
+ "name": "License Management",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

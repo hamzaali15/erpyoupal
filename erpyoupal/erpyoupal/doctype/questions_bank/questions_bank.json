@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "creation": "2022-05-20 11:04:55.256449",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "video_questions"
+ ],
+ "fields": [
+  {
+   "fieldname": "video_questions",
+   "fieldtype": "Table",
+   "label": "Video Questions",
+   "options": "Video Questions",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-05-20 11:05:30.424196",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Questions Bank",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

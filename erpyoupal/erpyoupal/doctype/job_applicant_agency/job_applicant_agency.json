@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {agency_name}",
+ "creation": "2022-03-14 18:50:55.766757",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "consultant_manager",
+  "section_break_2",
+  "agency_name",
+  "column_break_2",
+  "job_designation",
+  "section_break_4",
+  "person_name",
+  "email",
+  "column_break_7",
+  "role",
+  "mobile",
+  "section_break_10",
+  "skill",
+  "description",
+  "to_parse_cvs",
+  "create_it_consultants",
+  "attach_cvs",
+  "confidence_level",
+  "filled_cv"
+ ],
+ "fields": [
+  {
+   "fieldname": "consultant_manager",
+   "fieldtype": "Read Only",
+   "label": "Consultant Manager"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "agency_name",
+   "fieldtype": "Data",
+   "label": "Agency Name"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "job_designation",
+   "fieldtype": "Link",
+   "label": "Job Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "person_name",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Data",
+   "label": "Role"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "skill",
+   "fieldtype": "Table MultiSelect",
+   "label": "Skill",
+   "options": "Skill Item"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "to_parse_cvs",
+   "fieldtype": "Check",
+   "label": "Parse CVs"
+  },
+  {
+   "default": "0",
+   "fieldname": "create_it_consultants",
+   "fieldtype": "Check",
+   "label": "Create IT Consultants"
+  },
+  {
+   "fieldname": "attach_cvs",
+   "fieldtype": "Table",
+   "label": "Attach CVs",
+   "options": "CV List Table"
+  },
+  {
+   "fieldname": "confidence_level",
+   "fieldtype": "Text",
+   "label": "Confidence Level"
+  },
+  {
+   "default": "0",
+   "fieldname": "filled_cv",
+   "fieldtype": "Check",
+   "label": "Filled CV"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-29 06:38:03.626402",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Job Applicant Agency",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,157 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-04 17:02:56.780337",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "it_consultant",
+  "rate",
+  "hours",
+  "consultant_sub_total",
+  "client_rate",
+  "client_sub_total",
+  "gross_margin",
+  "section_break_8",
+  "check_dailyrate",
+  "define_day",
+  "daily_rate",
+  "column_break_12",
+  "check_monthlyrate",
+  "define_month",
+  "monthly_rate",
+  "section_break_16",
+  "set_utilization"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "it_consultant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "IT Consultant",
+   "options": "IT Consultant"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "it_consultant.rate_hourly",
+   "fetch_if_empty": 1,
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rate",
+   "precision": "0"
+  },
+  {
+   "columns": 1,
+   "fieldname": "hours",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Hours"
+  },
+  {
+   "columns": 1,
+   "fieldname": "consultant_sub_total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Sub Total",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "client_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Client Rate",
+   "precision": "0"
+  },
+  {
+   "columns": 1,
+   "fieldname": "client_sub_total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Sub Total",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "gross_margin",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Gross Margin",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_dailyrate",
+   "fieldtype": "Check",
+   "label": "Show Daily Rate"
+  },
+  {
+   "default": "8",
+   "depends_on": "check_dailyrate",
+   "fieldname": "define_day",
+   "fieldtype": "Data",
+   "label": "Define Day (How many hours in day)"
+  },
+  {
+   "depends_on": "check_dailyrate",
+   "fieldname": "daily_rate",
+   "fieldtype": "Data",
+   "label": "Daily Rate"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_monthlyrate",
+   "fieldtype": "Check",
+   "label": "Show Monthly Rate"
+  },
+  {
+   "default": "168",
+   "depends_on": "check_monthlyrate",
+   "fieldname": "define_month",
+   "fieldtype": "Data",
+   "label": "Define Month (How many hours in month)"
+  },
+  {
+   "depends_on": "check_monthlyrate",
+   "fieldname": "monthly_rate",
+   "fieldtype": "Data",
+   "label": "Monthly Rate "
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "100",
+   "fieldname": "set_utilization",
+   "fieldtype": "Select",
+   "label": "Set Utilization",
+   "options": "100\n75\n50\n25"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-29 06:46:38.448404",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Lead Candidates Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-24 13:45:38.185759",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "question",
+  "question_type",
+  "progressive_question",
+  "choices"
+ ],
+ "fields": [
+  {
+   "fieldname": "question",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Question",
+   "reqd": 1
+  },
+  {
+   "default": "Text",
+   "fieldname": "question_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Question Type",
+   "options": "Text\nRating questions\nMultiple Choice\nMultiple Choice Checkbox\nAttachment Question\nProgressive Question",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.question_type == 'Progressive Question'",
+   "fieldname": "progressive_question",
+   "fieldtype": "Link",
+   "label": "Progressive Question",
+   "mandatory_depends_on": "eval:doc.question_type == 'Progressive Question'",
+   "options": "Progressive Question"
+  },
+  {
+   "fieldname": "choices",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Choices",
+   "read_only_depends_on": "eval:doc.question_type == 'Progressive Question'"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-29 06:32:24.749752",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Designation Questions",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

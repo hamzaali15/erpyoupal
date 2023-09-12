@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-06 12:51:45.738988",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "view",
+  "persona_test_id",
+  "job_applicant_id",
+  "status",
+  "score",
+  "score_description",
+  "date_created"
+ ],
+ "fields": [
+  {
+   "fieldname": "persona_test_id",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Persona Test ID",
+   "options": "Persona Test",
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_applicant_id",
+   "fieldtype": "Read Only",
+   "label": "Job Applicant ID",
+   "options": "Job Applicant"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Date Created"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Status"
+  },
+  {
+   "fieldname": "score",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Score"
+  },
+  {
+   "fieldname": "score_description",
+   "fieldtype": "Text",
+   "label": "Score Description",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "view",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "View"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-10-05 10:40:45.685518",
+ "modified_by": "Administrator",
+ "module": "IT Service",
+ "name": "Persona Test History",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

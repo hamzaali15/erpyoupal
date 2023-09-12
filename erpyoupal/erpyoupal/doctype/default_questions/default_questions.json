@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-24 13:43:33.105900",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "question",
+  "column_break_2",
+  "question_type",
+  "choices"
+ ],
+ "fields": [
+  {
+   "fieldname": "question",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Question",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Text",
+   "fieldname": "question_type",
+   "fieldtype": "Select",
+   "label": "Question Type",
+   "options": "Text\nRating questions\nMultiple Choice\nMultiple Choice Checkbox\nAttachment Question",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval: doc.question_type == 'Multiple Choice' || doc.question_type == 'Multiple Choice Checkbox'",
+   "fieldname": "choices",
+   "fieldtype": "Small Text",
+   "label": "Choices",
+   "mandatory_depends_on": "eval: doc.question_type == 'Multiple Choice' || doc.question_type == 'Multiple Choice Checkbox'"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-29 06:31:57.648438",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Default Questions",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

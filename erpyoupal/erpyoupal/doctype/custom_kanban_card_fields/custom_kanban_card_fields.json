@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:kanban_doctype",
+ "creation": "2022-03-08 10:50:07.268801",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kanban_doctype",
+  "is_enabled",
+  "show_label",
+  "kanban_card_fields"
+ ],
+ "fields": [
+  {
+   "fieldname": "kanban_doctype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "DocType",
+   "options": "DocType",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_label",
+   "fieldtype": "Check",
+   "label": "Show Label"
+  },
+  {
+   "fieldname": "kanban_card_fields",
+   "fieldtype": "Table",
+   "label": "Fields",
+   "options": "Custom Kanban Card Fields Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-29 06:31:02.650179",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Custom Kanban Card Fields",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

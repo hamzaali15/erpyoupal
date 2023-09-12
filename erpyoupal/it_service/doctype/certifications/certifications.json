@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-21 12:20:59.265385",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "certification_name",
+  "certification_number",
+  "column_break_3",
+  "year_recieved",
+  "provided_by",
+  "section_break_6",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "certification_name",
+   "fieldtype": "Data",
+   "label": "Certification Name"
+  },
+  {
+   "fieldname": "certification_number",
+   "fieldtype": "Data",
+   "label": "Certification Number"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "year_recieved",
+   "fieldtype": "Data",
+   "label": "Year Recieved"
+  },
+  {
+   "fieldname": "provided_by",
+   "fieldtype": "Data",
+   "label": "Provided By"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-03-24 11:50:26.921005",
+ "modified_by": "Administrator",
+ "module": "IT Service",
+ "name": "Certifications",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

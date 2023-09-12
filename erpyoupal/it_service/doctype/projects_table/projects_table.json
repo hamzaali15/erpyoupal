@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-23 13:00:11.915285",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_name",
+  "location",
+  "industry",
+  "technologies_and_methodologies_used",
+  "section_break_5",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "industry",
+   "fieldtype": "Select",
+   "label": "Industry",
+   "options": "Aerospace Industry\nTransport Industry\nComputer Industry\nTelecommunication industry\nAgriculture industry\nConstruction Industry\nEducation Industry\nPharmaceutical Industry\nFood Industry\nHealth care Industry\nHospitality Industry\nEntertainment Industry\nNews Media Industry\nEnergy Industry\nManufacturing Industry\nMusic Industry\nMining Industry\nWorldwide web\nElectronics Industry"
+  },
+  {
+   "fieldname": "technologies_and_methodologies_used",
+   "fieldtype": "Table MultiSelect",
+   "label": "Technologies and Methodologies used",
+   "options": "Skill Item"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-03-24 11:50:46.534547",
+ "modified_by": "Administrator",
+ "module": "IT Service",
+ "name": "Projects Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

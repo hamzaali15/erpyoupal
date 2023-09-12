@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "autoname": "OFT.#####",
+ "creation": "2022-06-20 16:13:15.566916",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "template_id",
+  "template_title",
+  "template_type",
+  "column_break_4",
+  "template_created_time",
+  "template_updated_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "template_id",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Template ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "template_title",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Template Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "template_type",
+   "fieldtype": "Read Only",
+   "label": "Template Type"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "template_created_time",
+   "fieldtype": "Read Only",
+   "label": "Created Time"
+  },
+  {
+   "fieldname": "template_updated_time",
+   "fieldtype": "Read Only",
+   "label": "Updated Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-29 06:53:26.149743",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "OneFlow Template",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "template_title"
+}

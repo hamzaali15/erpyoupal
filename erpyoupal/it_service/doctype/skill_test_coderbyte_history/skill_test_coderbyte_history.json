@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-28 12:44:02.586570",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "view",
+  "skill_test_coderbyte_id",
+  "job_applicant_id",
+  "final_score",
+  "date_created"
+ ],
+ "fields": [
+  {
+   "fieldname": "skill_test_coderbyte_id",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Skill Test Coderbyte ID",
+   "options": "Skill Test Coderbyte"
+  },
+  {
+   "fieldname": "job_applicant_id",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Job Applicant ID"
+  },
+  {
+   "fieldname": "final_score",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Final Score"
+  },
+  {
+   "fieldname": "date_created",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Date Created"
+  },
+  {
+   "columns": 1,
+   "fieldname": "view",
+   "fieldtype": "Button",
+   "in_list_view": 1,
+   "label": "View"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-10-06 18:30:40.636836",
+ "modified_by": "Administrator",
+ "module": "IT Service",
+ "name": "Skill Test Coderbyte History",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

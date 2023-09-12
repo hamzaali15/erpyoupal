@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-19 15:39:12.601044",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_applicant",
+  "it_consultant",
+  "applicant_name",
+  "email",
+  "status",
+  "column_break_3",
+  "video_questions_bank",
+  "interview_link",
+  "section_break_5",
+  "question_table",
+  "section_break_10",
+  "record_history"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_applicant",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Applicant",
+   "options": "Job Applicant"
+  },
+  {
+   "fetch_from": "job_applicant.applicant_name",
+   "fieldname": "applicant_name",
+   "fieldtype": "Read Only",
+   "label": "Applicant Name"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "job_applicant.email_id",
+   "fieldname": "email",
+   "fieldtype": "Read Only",
+   "label": "Email"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Interview",
+   "fieldname": "video_questions_bank",
+   "fieldtype": "Link",
+   "label": "Video Questions Bank",
+   "options": "Questions Bank",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "question_table",
+   "fieldtype": "Table",
+   "label": "Question Table",
+   "options": "Video Interview Table"
+  },
+  {
+   "fieldname": "interview_link",
+   "fieldtype": "Read Only",
+   "label": "Interview Link"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nCompleted"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "record_history",
+   "fieldtype": "Table",
+   "label": "Record History",
+   "options": "Video Interview History",
+   "read_only": 1
+  },
+  {
+   "fieldname": "it_consultant",
+   "fieldtype": "Link",
+   "label": "IT Consultant",
+   "options": "IT Consultant"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-15 14:36:23.733097",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Video Interview",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "email"
+}

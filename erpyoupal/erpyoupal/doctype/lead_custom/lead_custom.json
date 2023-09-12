@@ -1,0 +1,586 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-17 13:17:53.490070",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "candidate_stages",
+  "lead_candidates_count",
+  "section_break_2",
+  "stages",
+  "column_break_2",
+  "organization",
+  "client_details_section",
+  "client_first_name",
+  "client_email",
+  "client_role",
+  "column_break_8",
+  "client_last_name",
+  "client_mobile",
+  "client_company_name",
+  "client_request_section",
+  "request_type",
+  "column_break_14",
+  "expires_in",
+  "talent_details_section",
+  "talent_title",
+  "talent_required_skills",
+  "column_break_17",
+  "talent_total_resources",
+  "talent_seniority",
+  "job_description_section",
+  "talent_description",
+  "talent_attachments",
+  "project_details_section",
+  "project_title",
+  "project_description",
+  "project_attachments",
+  "talent_terms_section",
+  "talent_start_date",
+  "talent_workload",
+  "column_break_30",
+  "talent_duration",
+  "talent_request_due_date",
+  "project_terms_section",
+  "project_start_date",
+  "project_terms",
+  "column_break_36",
+  "project_duration",
+  "project_request_due_date",
+  "pricing_factors_section",
+  "work_format",
+  "project_budget",
+  "column_break_42",
+  "project_talent_regions",
+  "talent_pricing_factors_section",
+  "talent_work_format",
+  "talent_budget",
+  "column_break_47",
+  "talent_regions",
+  "talent_location",
+  "calculator_section",
+  "talent_calculator",
+  "add_lead_candidates",
+  "calculator_html",
+  "html_calculator_desc",
+  "lead_candidates",
+  "total_hours",
+  "consultant_total",
+  "client_total",
+  "grand_total",
+  "project_calculator_section_section",
+  "project_calculator",
+  "html_project_calculator",
+  "html_project_desc",
+  "project_total_hours",
+  "project_total_cost",
+  "project_total_client_rate",
+  "project_total_gross_margin",
+  "legal_contract_request_section",
+  "request_contract",
+  "contract_status",
+  "legal_team_",
+  "contract",
+  "job_openings"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "default": "0|0|0|0|0|0|0",
+   "fieldname": "candidate_stages",
+   "fieldtype": "Data",
+   "label": "A|M|P|V|N|A|D|R",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "lead_candidates_count",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Candidates Count",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 2,
+   "default": "Open",
+   "fieldname": "stages",
+   "fieldtype": "Select",
+   "label": "Stages",
+   "options": "Open\nOn-hold\nClosed"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Organization",
+   "options": "Organizations"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "client_details_section",
+   "fieldtype": "Section Break",
+   "label": "Client Details"
+  },
+  {
+   "fieldname": "client_first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "client_email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "client_role",
+   "fieldtype": "Data",
+   "label": "Role In Company"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client_last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "client_mobile",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "client_company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "client_request_section",
+   "fieldtype": "Section Break",
+   "label": "Client Request"
+  },
+  {
+   "columns": 2,
+   "fieldname": "request_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Request Type",
+   "options": "\nTalent\nProject"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "expires_in",
+   "fieldtype": "Data",
+   "hide_seconds": 1,
+   "label": "Expires In",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval: doc.request_type == \"Talent\"",
+   "fieldname": "talent_details_section",
+   "fieldtype": "Section Break",
+   "label": "Talent Details"
+  },
+  {
+   "columns": 3,
+   "fieldname": "talent_title",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "label": "Talent Title"
+  },
+  {
+   "fieldname": "talent_required_skills",
+   "fieldtype": "Table MultiSelect",
+   "label": "Talent Required Skills",
+   "options": "Skill Item"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "talent_total_resources",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Talent Total Resources"
+  },
+  {
+   "fieldname": "talent_seniority",
+   "fieldtype": "Select",
+   "label": "Talent Seniority",
+   "options": "Any\nBasic\nJunior 1-3 years\nMiddle 4-6 years\nSenior 6-8 years\nExpert 8+ years"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval: doc.request_type == \"Talent\"",
+   "fieldname": "job_description_section",
+   "fieldtype": "Section Break",
+   "label": "Job Description"
+  },
+  {
+   "fieldname": "talent_description",
+   "fieldtype": "Text Editor",
+   "label": "Talent Description"
+  },
+  {
+   "fieldname": "talent_attachments",
+   "fieldtype": "Attach",
+   "label": "Talent Attachments"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval: doc.request_type == \"Project\"",
+   "fieldname": "project_details_section",
+   "fieldtype": "Section Break",
+   "label": "Project Details"
+  },
+  {
+   "fieldname": "project_title",
+   "fieldtype": "Data",
+   "label": "Project Title"
+  },
+  {
+   "fieldname": "project_description",
+   "fieldtype": "Text Editor",
+   "label": "Project Description"
+  },
+  {
+   "fieldname": "project_attachments",
+   "fieldtype": "Attach",
+   "label": "Project Attachments"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval: doc.request_type == \"Talent\"",
+   "fieldname": "talent_terms_section",
+   "fieldtype": "Section Break",
+   "label": "Talent Terms"
+  },
+  {
+   "fieldname": "talent_start_date",
+   "fieldtype": "Date",
+   "label": "Talent Start Date"
+  },
+  {
+   "fieldname": "talent_workload",
+   "fieldtype": "Data",
+   "label": "Talent Workload (Week / Hour)"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "talent_duration",
+   "fieldtype": "Data",
+   "label": "Talent Duration (In Months)"
+  },
+  {
+   "fieldname": "talent_request_due_date",
+   "fieldtype": "Date",
+   "label": "Talent Request Due Date"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval: doc.request_type == \"Project\"",
+   "fieldname": "project_terms_section",
+   "fieldtype": "Section Break",
+   "label": "Project Terms"
+  },
+  {
+   "fieldname": "project_start_date",
+   "fieldtype": "Date",
+   "label": "Project Start date"
+  },
+  {
+   "fieldname": "project_terms",
+   "fieldtype": "Select",
+   "label": "Project Terms",
+   "options": "\nTime & Material\nFixed Budget"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_duration",
+   "fieldtype": "Data",
+   "label": "Project Duration"
+  },
+  {
+   "fieldname": "project_request_due_date",
+   "fieldtype": "Date",
+   "label": "Project Request Due Date"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval: doc.request_type == \"Project\"",
+   "fieldname": "pricing_factors_section",
+   "fieldtype": "Section Break",
+   "label": "Pricing Factors"
+  },
+  {
+   "fieldname": "work_format",
+   "fieldtype": "Select",
+   "label": "Work Format",
+   "options": "\nRemote\nOnsite\nMixed"
+  },
+  {
+   "fieldname": "project_budget",
+   "fieldtype": "Select",
+   "label": "Project Budget",
+   "options": "\n< $1000\n$1000-$2500\n$2500-$5000\n$5000-$10000\n$10000-$25000\n$25000-$50000\n$50000-$100000\n$100000+"
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_talent_regions",
+   "fieldtype": "Select",
+   "label": "Project Talent Regions",
+   "options": "\nNorth America\nEurope\nNordic\nAfrica\nAsia\nMiddle-East\nOceania"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval: doc.request_type == \"Talent\"",
+   "fieldname": "talent_pricing_factors_section",
+   "fieldtype": "Section Break",
+   "label": "Talent Pricing Factors"
+  },
+  {
+   "fieldname": "talent_work_format",
+   "fieldtype": "Select",
+   "label": "Talent Work Format",
+   "options": "\nRemote\nOnsite\nMixed"
+  },
+  {
+   "fieldname": "talent_budget",
+   "fieldtype": "Select",
+   "label": "Talent Budget",
+   "options": "\nN/A\n< $25\n$25-$49\n$50-$99\n$100-$149\n$150-$199\n$200-$300\n$300+"
+  },
+  {
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "talent_regions",
+   "fieldtype": "Select",
+   "label": "Talent Regions",
+   "options": "\nNorth America\nEurope\nNordic\nAfrica\nMiddle-East\nAsia\nOceania"
+  },
+  {
+   "fieldname": "talent_location",
+   "fieldtype": "Data",
+   "label": "Talent Location"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval: doc.request_type == \"Talent\"",
+   "fieldname": "calculator_section",
+   "fieldtype": "Section Break",
+   "label": "Calculator"
+  },
+  {
+   "fieldname": "talent_calculator",
+   "fieldtype": "Table",
+   "label": "Talent Calculator",
+   "options": "Lead Calculator"
+  },
+  {
+   "fieldname": "add_lead_candidates",
+   "fieldtype": "Button",
+   "label": "Add Lead Candidates"
+  },
+  {
+   "fieldname": "calculator_html",
+   "fieldtype": "HTML",
+   "label": "Calculator HTML",
+   "options": "\n\n\n   \n      <title></title>\n   \n\t\n   \n      <table border=\"1\" height=\"60\" width=\"1000\">\n         <tbody><tr>\n            <td>Total Hours</td>\n            <td>Consultant Total</td>\n            <td>Client Total</td>\n            <td>Total Gross Margin</td>\n         </tr>\n         \n         <tr>\n            <td>{{doc.total_hours}}</td>\n            <td>{{doc.consultant_total}}</td>\n            <td>{{doc.client_total}}</td>\n            <td>{{doc.grand_total}}%</td>\n         </tr>\n      </tbody></table>\n   \n\t\n\n    \n\n"
+  },
+  {
+   "fieldname": "html_calculator_desc",
+   "fieldtype": "HTML",
+   "label": "HTML Calculator Desc",
+   "options": "<p style=\"background-color: powderblue;\">Save to Update</p>"
+  },
+  {
+   "fieldname": "lead_candidates",
+   "fieldtype": "Table",
+   "label": "Lead Candidates",
+   "options": "Lead Custom Candidates",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_hours",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "total_hours"
+  },
+  {
+   "fieldname": "consultant_total",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "consultant_total"
+  },
+  {
+   "fieldname": "client_total",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "client_total"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "grand_total"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval: doc.request_type == \"Project\"",
+   "fieldname": "project_calculator_section_section",
+   "fieldtype": "Section Break",
+   "label": "Project Calculator Section"
+  },
+  {
+   "fieldname": "project_calculator",
+   "fieldtype": "Table",
+   "label": "Project Calculator",
+   "options": "Lead Project Calculator"
+  },
+  {
+   "fieldname": "html_project_calculator",
+   "fieldtype": "HTML",
+   "label": "html_project_calculator",
+   "options": "\n\n\n   \n      <title></title>\n   \n\t\n   \n      <table border=\"1\" height=\"60\" width=\"1000\">\n         <tbody><tr>\n            <td>Total Hours</td>\n            <td>Total Cost</td>\n            <td>Client Total</td>\n            <td>Total Gross Margin</td>\n         </tr>\n         \n         <tr>\n            <td>{{doc.project_total_hours}}</td>\n            <td>{{doc.project_total_cost}}</td>\n            <td>{{doc.project_total_client_rate}}</td>\n            <td>{{doc.project_total_gross_margin}}%</td>\n         </tr>\n      </tbody></table>\n   \n\t\n\n    \n\n"
+  },
+  {
+   "fieldname": "html_project_desc",
+   "fieldtype": "HTML",
+   "label": "html_project_desc",
+   "options": "<p style=\"background-color: powderblue;\">Save to Update</p>"
+  },
+  {
+   "fieldname": "project_total_hours",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Project Total Hours"
+  },
+  {
+   "fieldname": "project_total_cost",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Project Total Cost"
+  },
+  {
+   "fieldname": "project_total_client_rate",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Project Total Client Rate"
+  },
+  {
+   "fieldname": "project_total_gross_margin",
+   "fieldtype": "Percent",
+   "hidden": 1,
+   "label": "Project Total Gross Margin"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "legal_contract_request_section",
+   "fieldtype": "Section Break",
+   "label": "Legal Contract Request"
+  },
+  {
+   "default": "None",
+   "fieldname": "request_contract",
+   "fieldtype": "Select",
+   "label": "Request Contract",
+   "options": "Yes\nNo\nNone"
+  },
+  {
+   "fieldname": "contract_status",
+   "fieldtype": "Read Only",
+   "label": "Contract Status"
+  },
+  {
+   "fieldname": "legal_team_",
+   "fieldtype": "Data",
+   "label": "Legal Team ",
+   "options": "Email"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "label": "Contract",
+   "options": "Contract"
+  },
+  {
+   "fieldname": "job_openings",
+   "fieldtype": "Table MultiSelect",
+   "hidden": 1,
+   "in_standard_filter": 1,
+   "label": "Candidates Job Opening",
+   "options": "Job Openings Table",
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Lead Candidate",
+   "link_fieldname": "generated_from_lead"
+  },
+  {
+   "link_doctype": "Job Opening",
+   "link_fieldname": "from_lead_custom"
+  },
+  {
+   "link_doctype": "Project",
+   "link_fieldname": "generated_from"
+  }
+ ],
+ "modified": "2023-03-29 06:47:06.159336",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Lead Custom",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "talent_title"
+}

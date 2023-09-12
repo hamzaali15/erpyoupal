@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:assessment_id",
+ "creation": "2022-06-08 12:13:58.143017",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assessment_name",
+  "assessment_id",
+  "disable_assessment"
+ ],
+ "fields": [
+  {
+   "fieldname": "assessment_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Assessment Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assessment_id",
+   "fieldtype": "Data",
+   "label": "Assessment ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disable_assessment",
+   "fieldtype": "Check",
+   "label": "Disable Assessment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-02 11:17:00.646488",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "TestGorilla Asessment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "assessment_name"
+}

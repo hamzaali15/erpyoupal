@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "creation": "2022-07-15 10:22:25.058364",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "skill_test_name",
+  "job_applicant",
+  "column_break_3",
+  "applicant_name",
+  "applicant_email",
+  "section_break_6",
+  "data"
+ ],
+ "fields": [
+  {
+   "fieldname": "skill_test_name",
+   "fieldtype": "Data",
+   "label": "Skill Test Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_applicant",
+   "fieldtype": "Data",
+   "label": "Job Applicant",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "label": "Applicant Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "applicant_email",
+   "fieldtype": "Data",
+   "label": "Applicant Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Data",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-15 10:22:25.058364",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Skill Test Retake Data",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

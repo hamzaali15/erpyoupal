@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "creation": "2022-10-05 15:44:02.042144",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "question",
+  "question_type",
+  "choices"
+ ],
+ "fields": [
+  {
+   "fieldname": "question",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Question",
+   "reqd": 1
+  },
+  {
+   "default": "Text",
+   "fieldname": "question_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Question Type",
+   "options": "Text\nRating questions\nMultiple Choice\nMultiple Choice Checkbox",
+   "reqd": 1
+  },
+  {
+   "fieldname": "choices",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Choices"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-10-07 15:46:02.234818",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Progressive Question Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

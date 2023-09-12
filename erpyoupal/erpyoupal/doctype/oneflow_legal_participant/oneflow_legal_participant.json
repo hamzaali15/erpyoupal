@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-20 18:59:50.155797",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "party_id",
+  "party_name",
+  "participant_id",
+  "participant_name",
+  "participant_email",
+  "sign_method",
+  "sign_state",
+  "contract_link",
+  "contract_link_creation"
+ ],
+ "fields": [
+  {
+   "fieldname": "party_id",
+   "fieldtype": "Data",
+   "label": "Party ID",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Party Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "participant_id",
+   "fieldtype": "Data",
+   "label": "Participant ID"
+  },
+  {
+   "columns": 3,
+   "fieldname": "participant_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Participant Name"
+  },
+  {
+   "columns": 3,
+   "fieldname": "participant_email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Participant Email"
+  },
+  {
+   "fieldname": "sign_method",
+   "fieldtype": "Data",
+   "label": "Sign Method"
+  },
+  {
+   "columns": 2,
+   "fieldname": "sign_state",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sign State"
+  },
+  {
+   "fieldname": "contract_link",
+   "fieldtype": "Text",
+   "label": "Contract Link",
+   "read_only": 1
+  },
+  {
+   "fieldname": "contract_link_creation",
+   "fieldtype": "Data",
+   "label": "Contract Link creation",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-29 06:53:24.699098",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "OneFlow Legal Participant",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

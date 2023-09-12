@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-05-19 16:00:03.915714",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "question",
+  "question_timing",
+  "column_break_3",
+  "answer",
+  "answer_time",
+  "video_url",
+  "filename",
+  "video_status"
+ ],
+ "fields": [
+  {
+   "columns": 4,
+   "fieldname": "question",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Question",
+   "read_only": 1
+  },
+  {
+   "columns": 4,
+   "fieldname": "answer",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Answer"
+  },
+  {
+   "columns": 1,
+   "fieldname": "answer_time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Answer Time"
+  },
+  {
+   "columns": 1,
+   "fieldname": "question_timing",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Question Timing",
+   "read_only": 1
+  },
+  {
+   "fieldname": "video_url",
+   "fieldtype": "Text",
+   "label": "Video URL"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "filename",
+   "fieldtype": "Data",
+   "label": "Video Filename"
+  },
+  {
+   "fieldname": "video_status",
+   "fieldtype": "Data",
+   "label": "Video Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-07-21 14:41:58.790130",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Video Interview Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,30 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-02 12:42:11.527620",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "screenshots"
+ ],
+ "fields": [
+  {
+   "fieldname": "screenshots",
+   "fieldtype": "Attach",
+   "in_preview": 1,
+   "label": "Screenshots"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-05 08:56:15.812786",
+ "modified_by": "Administrator",
+ "module": "Clockify Project",
+ "name": "Clockify Timelog Attachments",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

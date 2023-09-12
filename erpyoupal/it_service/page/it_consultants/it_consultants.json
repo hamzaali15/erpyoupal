@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2022-10-03 20:34:43.579010",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2022-10-03 20:34:43.579010",
+ "modified_by": "Administrator",
+ "module": "IT Service",
+ "name": "it-consultants",
+ "owner": "Administrator",
+ "page_name": "IT Consultants",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Consultants"
+}

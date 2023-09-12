@@ -1,0 +1,736 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-02 11:19:16.681241",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "logo",
+  "organization_id",
+  "organization_name",
+  "address",
+  "organization_type",
+  "status",
+  "verification",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_organizations",
+  "column_break_13",
+  "company_email",
+  "company_mobile",
+  "company_website",
+  "company_socials",
+  "linkedin",
+  "facebook",
+  "instagram",
+  "twitter",
+  "column_break_22",
+  "founded",
+  "organization_size",
+  "hq",
+  "about_section_section",
+  "about",
+  "saved_candidates_section",
+  "save_candidate",
+  "billing_details_section",
+  "business_id",
+  "bank_name",
+  "vat",
+  "account_number",
+  "clearing_number",
+  "iban_swift",
+  "column_break_37",
+  "invoice_contact",
+  "invoice_name",
+  "invoice_email",
+  "invoice_mobile",
+  "contract_document_section",
+  "oneflow_contracts",
+  "partner_section",
+  "rate_hourly",
+  "eu_zone",
+  "speciality",
+  "location",
+  "data_protection",
+  "agreement_link",
+  "lead_info_section",
+  "lead_first_name",
+  "email_primary",
+  "lead_last_name",
+  "mobile_primary",
+  "role_in_company",
+  "employees_and_rates_section",
+  "currency",
+  "employees",
+  "hourly_rate",
+  "minimum_project_size",
+  "preferences_section",
+  "work_type",
+  "work_destination",
+  "social_and_platforms",
+  "social",
+  "add_social",
+  "platforms_heading",
+  "platforms",
+  "summary_section",
+  "tagline",
+  "description",
+  "skill_section",
+  "skill",
+  "projects_section",
+  "add_projects",
+  "certifications_section",
+  "add_certifications",
+  "language_section",
+  "language_proficiency_level",
+  "id_card_heading",
+  "idcard_nationality",
+  "idcard_personalidnum",
+  "id_card_gender",
+  "idcard_dob",
+  "idcard_cityofbirth",
+  "idcard_countryofbirth",
+  "id_card_date_of_issue",
+  "id_card_date_of_expiry",
+  "id_card_issued_by",
+  "passport_section",
+  "passport_nationality",
+  "passport_no",
+  "passport_visa_type",
+  "passport_date_of_birth",
+  "passport_city_of_birth",
+  "passport_country_of_birth",
+  "passport_date_of_issue",
+  "passport_date_of_expiry",
+  "passport_issued_by",
+  "preferred_currency"
+ ],
+ "fields": [
+  {
+   "fieldname": "organization_id",
+   "fieldtype": "Data",
+   "label": "Organization ID",
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "organization_name",
+   "fieldtype": "Data",
+   "label": "Organization Name"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "organization_type",
+   "fieldtype": "Select",
+   "label": "Organization Type",
+   "options": "\nIndividual\nClient\nPartner\nClient/Partner\nSupplier"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive\nSeparated\nNot Interested"
+  },
+  {
+   "fieldname": "verification",
+   "fieldtype": "Select",
+   "label": "Verification",
+   "options": "Unknown\nVetted\nProven"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Organizations"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "parent_organizations",
+   "fieldtype": "Link",
+   "label": "Parent Organizations",
+   "options": "Organizations"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "company_email",
+   "fieldtype": "Data",
+   "label": "Company Email",
+   "options": "Email"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "company_mobile",
+   "fieldtype": "Data",
+   "label": "Company Mobile"
+  },
+  {
+   "fieldname": "company_website",
+   "fieldtype": "Data",
+   "label": "Company Website",
+   "options": "URL"
+  },
+  {
+   "fieldname": "linkedin",
+   "fieldtype": "Data",
+   "label": "LinkedIn",
+   "options": "URL"
+  },
+  {
+   "fieldname": "facebook",
+   "fieldtype": "Data",
+   "label": "Facebook",
+   "options": "URL"
+  },
+  {
+   "fieldname": "instagram",
+   "fieldtype": "Data",
+   "label": "Instagram",
+   "options": "URL"
+  },
+  {
+   "fieldname": "company_socials",
+   "fieldtype": "Heading",
+   "label": "Company Socials"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "billing_details_section",
+   "fieldtype": "Section Break",
+   "label": "Billing Details"
+  },
+  {
+   "fieldname": "business_id",
+   "fieldtype": "Data",
+   "label": "Business ID"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "vat",
+   "fieldtype": "Data",
+   "label": "VAT"
+  },
+  {
+   "fieldname": "account_number",
+   "fieldtype": "Data",
+   "label": "Account Number"
+  },
+  {
+   "fieldname": "clearing_number",
+   "fieldtype": "Data",
+   "label": "Clearing Number"
+  },
+  {
+   "fieldname": "iban_swift",
+   "fieldtype": "Data",
+   "label": "IBAN / SWIFT"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "saved_candidates_section",
+   "fieldtype": "Section Break",
+   "label": "Saved Candidates"
+  },
+  {
+   "fieldname": "save_candidate",
+   "fieldtype": "Table MultiSelect",
+   "label": "Save Candidate",
+   "options": "Consultant Item"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Logo"
+  },
+  {
+   "date_year_only": 1,
+   "fieldname": "founded",
+   "fieldtype": "Date",
+   "label": "Founded"
+  },
+  {
+   "fieldname": "organization_size",
+   "fieldtype": "Select",
+   "label": "Organization Size",
+   "options": "N/A\n1-10\n11-50\n51-200\n201-500\n501-1000\n1001-5000\n5001-10000\n10001+"
+  },
+  {
+   "fieldname": "hq",
+   "fieldtype": "Data",
+   "label": "HQ"
+  },
+  {
+   "fieldname": "invoice_contact",
+   "fieldtype": "Heading",
+   "label": "Invoice Contact"
+  },
+  {
+   "fieldname": "invoice_name",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "invoice_email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "invoice_mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "about_section_section",
+   "fieldtype": "Section Break",
+   "label": "About"
+  },
+  {
+   "fieldname": "about",
+   "fieldtype": "Text",
+   "label": "Organization Description"
+  },
+  {
+   "fieldname": "twitter",
+   "fieldtype": "Data",
+   "label": "Twitter",
+   "options": "URL"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "contract_document_section",
+   "fieldtype": "Section Break",
+   "label": "Contract Documents"
+  },
+  {
+   "fieldname": "oneflow_contracts",
+   "fieldtype": "Table",
+   "label": "OneFlow Contracts",
+   "options": "OneFlow Contract Table"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate_hourly",
+   "fieldtype": "Select",
+   "label": "Rate (Hourly)",
+   "options": "N/A\n< $25\n$25-$49\n$50-$99\n$100-$149\n$150-$199\n$200-$300\n$300+"
+  },
+  {
+   "fieldname": "eu_zone",
+   "fieldtype": "Select",
+   "label": "EU Zone",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "speciality",
+   "fieldtype": "Table MultiSelect",
+   "label": "Speciality",
+   "options": "Speciality Item"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "label": "Location",
+   "options": "Country"
+  },
+  {
+   "description": "Select Location to show",
+   "fieldname": "data_protection",
+   "fieldtype": "Read Only",
+   "label": "Data Protection"
+  },
+  {
+   "fieldname": "agreement_link",
+   "fieldtype": "Attach",
+   "label": "Agreement Link"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "lead_info_section",
+   "fieldtype": "Heading",
+   "label": "Lead Info"
+  },
+  {
+   "fieldname": "lead_first_name",
+   "fieldtype": "Data",
+   "label": "Lead First Name"
+  },
+  {
+   "fieldname": "email_primary",
+   "fieldtype": "Data",
+   "label": "Lead Email (Primary)"
+  },
+  {
+   "fieldname": "lead_last_name",
+   "fieldtype": "Data",
+   "label": "Lead Last Name"
+  },
+  {
+   "fieldname": "mobile_primary",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Lead Mobile (Primary)"
+  },
+  {
+   "fieldname": "role_in_company",
+   "fieldtype": "Data",
+   "label": "Lead Role In Company"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "employees_and_rates_section",
+   "fieldtype": "Heading",
+   "label": "Employees and Rates"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Select",
+   "label": "Currency",
+   "options": "\nUSD\nEURO\nSEK"
+  },
+  {
+   "fieldname": "employees",
+   "fieldtype": "Select",
+   "label": "Employees",
+   "options": "\n2-9\n10-49\n50-249\n250-999\n1000-9999\n10000+"
+  },
+  {
+   "depends_on": "currency",
+   "fieldname": "hourly_rate",
+   "fieldtype": "Select",
+   "label": "Hourly Rate"
+  },
+  {
+   "depends_on": "currency",
+   "fieldname": "minimum_project_size",
+   "fieldtype": "Select",
+   "label": "Minimum Project Size"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "preferences_section",
+   "fieldtype": "Heading",
+   "label": "Preferences"
+  },
+  {
+   "fieldname": "work_type",
+   "fieldtype": "Select",
+   "label": "Work Type",
+   "options": "Remote\nOnsite\nRemote/Onsite"
+  },
+  {
+   "fieldname": "work_destination",
+   "fieldtype": "Select",
+   "label": "Work Destination",
+   "options": "National\nInternational"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "social_and_platforms",
+   "fieldtype": "Heading",
+   "label": "Social & Platforms"
+  },
+  {
+   "fieldname": "social",
+   "fieldtype": "Heading",
+   "label": "Social"
+  },
+  {
+   "fieldname": "add_social",
+   "fieldtype": "Table",
+   "label": "Add Socials",
+   "options": "Socials"
+  },
+  {
+   "fieldname": "platforms_heading",
+   "fieldtype": "Heading",
+   "label": "Platforms"
+  },
+  {
+   "fieldname": "platforms",
+   "fieldtype": "Table",
+   "label": "Add Platforms",
+   "options": "Platforms"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "summary_section",
+   "fieldtype": "Heading",
+   "label": "Summary"
+  },
+  {
+   "fieldname": "tagline",
+   "fieldtype": "Data",
+   "label": "Tagline",
+   "length": 75
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "skill_section",
+   "fieldtype": "Heading",
+   "label": "Skills"
+  },
+  {
+   "fieldname": "skill",
+   "fieldtype": "Table MultiSelect",
+   "in_standard_filter": 1,
+   "label": "Skills",
+   "options": "Skill Item"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "projects_section",
+   "fieldtype": "Heading",
+   "label": "Projects"
+  },
+  {
+   "fieldname": "add_projects",
+   "fieldtype": "Table",
+   "label": "Add Projects",
+   "options": "Projects Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "certifications_section",
+   "fieldtype": "Heading",
+   "label": "Certifications"
+  },
+  {
+   "fieldname": "add_certifications",
+   "fieldtype": "Table",
+   "label": "Add Certifications",
+   "options": "Certifications"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "language_section",
+   "fieldtype": "Heading",
+   "label": "Language"
+  },
+  {
+   "fieldname": "language_proficiency_level",
+   "fieldtype": "Table",
+   "label": "Language Proficiency Level",
+   "options": "Languages Table"
+  },
+  {
+   "fieldname": "idcard_nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Country"
+  },
+  {
+   "fieldname": "idcard_personalidnum",
+   "fieldtype": "Data",
+   "label": "Personal ID Number"
+  },
+  {
+   "fieldname": "id_card_gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "idcard_dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "idcard_cityofbirth",
+   "fieldtype": "Data",
+   "label": "City of Birth"
+  },
+  {
+   "fieldname": "idcard_countryofbirth",
+   "fieldtype": "Data",
+   "label": "Country of Birth"
+  },
+  {
+   "fieldname": "id_card_date_of_issue",
+   "fieldtype": "Date",
+   "label": "Date of Issue"
+  },
+  {
+   "fieldname": "id_card_date_of_expiry",
+   "fieldtype": "Date",
+   "label": "Date of Expiry"
+  },
+  {
+   "fieldname": "id_card_issued_by",
+   "fieldtype": "Data",
+   "label": "Issued By"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval: doc.identity_document_type==\"Passport\"",
+   "fieldname": "passport_section",
+   "fieldtype": "Heading",
+   "label": "Passport"
+  },
+  {
+   "fieldname": "passport_nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Country"
+  },
+  {
+   "fieldname": "passport_no",
+   "fieldtype": "Data",
+   "label": "Passport No"
+  },
+  {
+   "fieldname": "passport_visa_type",
+   "fieldtype": "Data",
+   "label": "Visa Type"
+  },
+  {
+   "fieldname": "passport_date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "passport_city_of_birth",
+   "fieldtype": "Data",
+   "label": "City of Birth"
+  },
+  {
+   "fieldname": "passport_country_of_birth",
+   "fieldtype": "Data",
+   "label": "Country of Birth"
+  },
+  {
+   "fieldname": "passport_date_of_issue",
+   "fieldtype": "Date",
+   "label": "Date of Issue"
+  },
+  {
+   "fieldname": "passport_date_of_expiry",
+   "fieldtype": "Date",
+   "label": "Date of Expiry"
+  },
+  {
+   "fieldname": "passport_issued_by",
+   "fieldtype": "Data",
+   "label": "Issued By"
+  },
+  {
+   "fieldname": "preferred_currency",
+   "fieldtype": "Select",
+   "label": "Preferred Currency",
+   "options": "USD\nEURO\nGBP\nSEK"
+  },
+  {
+   "collapsible": 1,
+   "depends_on": "eval:doc.organization_type==\"Client/Partner\"||doc.organization_type==\"Partner\";",
+   "fieldname": "partner_section",
+   "fieldtype": "Section Break",
+   "label": "Partner Section"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "id_card_heading",
+   "fieldtype": "Heading",
+   "label": "ID Card"
+  }
+ ],
+ "image_field": "logo",
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [
+  {
+   "group": "People",
+   "link_doctype": "People",
+   "link_fieldname": "organization_name"
+  },
+  {
+   "group": "Requests",
+   "link_doctype": "Job Opening",
+   "link_fieldname": "company"
+  },
+  {
+   "group": "Requests",
+   "link_doctype": "Lead Custom",
+   "link_fieldname": "organization"
+  },
+  {
+   "group": "Requests",
+   "link_doctype": "Lead Candidate",
+   "link_fieldname": "generated_by"
+  }
+ ],
+ "modified": "2022-10-04 11:56:33.399766",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "Organizations",
+ "nsm_parent_field": "parent_organizations",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,681 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{person_name}-{#####}",
+ "creation": "2022-03-02 11:27:03.603439",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "first_name",
+  "person_name",
+  "organization_name",
+  "is_primary_contact_person",
+  "reports_to",
+  "country",
+  "nda",
+  "gender",
+  "column_break_7",
+  "last_name",
+  "people_type",
+  "designation",
+  "sub_designation",
+  "address",
+  "data_protection",
+  "date_of_birth",
+  "other_section",
+  "status",
+  "agency",
+  "consultant_documents",
+  "image",
+  "column_break_21",
+  "email_address",
+  "create_user",
+  "created_user",
+  "google_calendar",
+  "section_break_7",
+  "email",
+  "column_break_9",
+  "mobile",
+  "socials_section",
+  "linkedin",
+  "facebook",
+  "fiverr",
+  "github",
+  "column_break_14",
+  "instagram",
+  "twitter",
+  "upwork",
+  "stackoverflow",
+  "passport_section",
+  "passport_nationality",
+  "passport_number",
+  "passport_dob",
+  "passport_cityofbirth",
+  "passport_countryofbirth",
+  "column_break_36",
+  "passport_gender",
+  "passport_dateofissue",
+  "passport_dateofexpiry",
+  "passport_issuedby",
+  "passport_visatype",
+  "emergency_contact_section",
+  "emergency_contact_name",
+  "emergency_contact_email",
+  "emergency_contact_mobile",
+  "column_break_46",
+  "emergency_contact_relationship",
+  "emergency_contact_children",
+  "billing_information_section",
+  "billing_organization_name",
+  "billing_organization_address",
+  "billing_vat_number",
+  "billing_business_id",
+  "column_break_61",
+  "billing_account_holder_name",
+  "billing_bank_name",
+  "billing_address",
+  "billing_clearing_number",
+  "billing_account_number",
+  "billing_iban",
+  "billing_swift",
+  "billing_bic",
+  "default_payment_method",
+  "billing_paypal",
+  "billing_payoneer",
+  "billing_skrill",
+  "billing_neteller",
+  "billing_wise",
+  "portal_access_section",
+  "client_portal_access",
+  "client_portal_log_status",
+  "client_portal_last_login",
+  "client_portal_invitation_status",
+  "client_portal_invite_date",
+  "client_portal_user_account_status",
+  "access_level",
+  "column_break_30",
+  "partner_portal_access",
+  "partner_portal_log_status",
+  "partner_portal_last_login",
+  "partner_portal_invitation_status",
+  "partner_portal_invite_date",
+  "partner_portal_user_account_status",
+  "column_break_31",
+  "talent_portal_access",
+  "talent_portal_log_status",
+  "talent_portal_last_login",
+  "talent_portal_invitation_status",
+  "talent_portal_invite_date",
+  "talent_portal_user_account_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "person_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Full Name",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_primary_contact_person",
+   "fieldtype": "Check",
+   "label": "Is Primary Contact Person"
+  },
+  {
+   "fieldname": "organization_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Organization Name",
+   "options": "Organizations"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive\nSeparated\nNot Interested"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break",
+   "label": "Contacts"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Table",
+   "label": "Email",
+   "options": "People Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Table",
+   "label": "Mobile",
+   "options": "People Mobile"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "socials_section",
+   "fieldtype": "Section Break",
+   "label": "Socials"
+  },
+  {
+   "fieldname": "linkedin",
+   "fieldtype": "Data",
+   "label": "LinkedIn"
+  },
+  {
+   "fieldname": "facebook",
+   "fieldtype": "Data",
+   "label": "Facebook"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "instagram",
+   "fieldtype": "Data",
+   "label": "Instagram"
+  },
+  {
+   "fieldname": "twitter",
+   "fieldtype": "Data",
+   "label": "Twitter"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reports_to",
+   "fieldtype": "Link",
+   "label": "Reports to",
+   "options": "People"
+  },
+  {
+   "fieldname": "agency",
+   "fieldtype": "Data",
+   "label": "Agency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "default": "0",
+   "fieldname": "create_user",
+   "fieldtype": "Check",
+   "label": "Create User"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Primary Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "google_calendar",
+   "fieldtype": "Link",
+   "label": "Google Calendar",
+   "options": "Google Calendar"
+  },
+  {
+   "fieldname": "created_user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "people_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "People Type",
+   "options": "\nBusiness\nConsultant\nBusiness / Consultant"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "portal_access_section",
+   "fieldtype": "Section Break",
+   "label": "Portal Access"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "client_portal_access",
+   "fieldtype": "Check",
+   "label": "Client Portal",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "partner_portal_access",
+   "fieldtype": "Check",
+   "label": "Partner Portal",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "talent_portal_access",
+   "fieldtype": "Check",
+   "label": "Talent Portal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "passport_section",
+   "fieldtype": "Section Break",
+   "label": "Passport"
+  },
+  {
+   "fieldname": "passport_nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Country"
+  },
+  {
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "label": "Passport Number"
+  },
+  {
+   "fieldname": "passport_dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "passport_cityofbirth",
+   "fieldtype": "Data",
+   "label": "City of Birth"
+  },
+  {
+   "fieldname": "passport_countryofbirth",
+   "fieldtype": "Data",
+   "label": "Country of Birth"
+  },
+  {
+   "fieldname": "passport_gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "passport_dateofissue",
+   "fieldtype": "Date",
+   "label": "Date of Issue"
+  },
+  {
+   "fieldname": "passport_dateofexpiry",
+   "fieldtype": "Date",
+   "label": "Date of Expiry"
+  },
+  {
+   "fieldname": "passport_issuedby",
+   "fieldtype": "Data",
+   "label": "Issued By"
+  },
+  {
+   "fieldname": "passport_visatype",
+   "fieldtype": "Data",
+   "label": "Visa Type"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "emergency_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Emergency Contact"
+  },
+  {
+   "fieldname": "emergency_contact_name",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "emergency_contact_email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "emergency_contact_mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "column_break_46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "emergency_contact_relationship",
+   "fieldtype": "Data",
+   "label": "Relationship"
+  },
+  {
+   "fieldname": "emergency_contact_children",
+   "fieldtype": "Data",
+   "label": "Children"
+  },
+  {
+   "fieldname": "nda",
+   "fieldtype": "Select",
+   "label": "NDA",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "data_protection",
+   "fieldtype": "Select",
+   "label": "Data Protection",
+   "options": "\nInside EEA\nOutside EEA | GDPR Safe\nOutside EEA | GDPR Unsafe"
+  },
+  {
+   "fieldname": "consultant_documents",
+   "fieldtype": "Link",
+   "label": "Consultant Documents",
+   "options": "Consultant Documents"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "access_level",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Access Level",
+   "options": "\nOwner\nAdmin\nManager"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "other_section",
+   "fieldtype": "Section Break",
+   "label": "Other"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "billing_information_section",
+   "fieldtype": "Section Break",
+   "label": "Billing Information"
+  },
+  {
+   "fieldname": "billing_organization_name",
+   "fieldtype": "Data",
+   "label": "Organization Name"
+  },
+  {
+   "fieldname": "billing_organization_address",
+   "fieldtype": "Data",
+   "label": "Organization Address"
+  },
+  {
+   "fieldname": "billing_vat_number",
+   "fieldtype": "Data",
+   "label": "VAT Number"
+  },
+  {
+   "fieldname": "billing_business_id",
+   "fieldtype": "Data",
+   "label": "Business ID"
+  },
+  {
+   "fieldname": "column_break_61",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "billing_account_holder_name",
+   "fieldtype": "Data",
+   "label": "Account holder name"
+  },
+  {
+   "fieldname": "billing_bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "billing_address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "billing_clearing_number",
+   "fieldtype": "Data",
+   "label": "Clearing Number"
+  },
+  {
+   "fieldname": "billing_account_number",
+   "fieldtype": "Data",
+   "label": "Account Number"
+  },
+  {
+   "fieldname": "billing_iban",
+   "fieldtype": "Data",
+   "label": "IBAN"
+  },
+  {
+   "fieldname": "billing_swift",
+   "fieldtype": "Data",
+   "label": "SWIFT"
+  },
+  {
+   "fieldname": "billing_bic",
+   "fieldtype": "Data",
+   "label": "BIC"
+  },
+  {
+   "fieldname": "billing_paypal",
+   "fieldtype": "Data",
+   "label": "Billing Paypal"
+  },
+  {
+   "fieldname": "billing_payoneer",
+   "fieldtype": "Data",
+   "label": "Billing Payoneer"
+  },
+  {
+   "fieldname": "billing_skrill",
+   "fieldtype": "Data",
+   "label": "Billing Skrill"
+  },
+  {
+   "fieldname": "billing_neteller",
+   "fieldtype": "Data",
+   "label": "Billing Neteller"
+  },
+  {
+   "fieldname": "billing_wise",
+   "fieldtype": "Data",
+   "label": "Billing Wise"
+  },
+  {
+   "fieldname": "default_payment_method",
+   "fieldtype": "Select",
+   "label": "Default Payment Method",
+   "options": "\nPaypal\nPayoneer\nSkrill\nNeteller\nWise"
+  },
+  {
+   "fieldname": "fiverr",
+   "fieldtype": "Data",
+   "label": "Fiverr"
+  },
+  {
+   "fieldname": "github",
+   "fieldtype": "Data",
+   "label": "Github"
+  },
+  {
+   "fieldname": "upwork",
+   "fieldtype": "Data",
+   "label": "Upwork"
+  },
+  {
+   "fieldname": "stackoverflow",
+   "fieldtype": "Data",
+   "label": "StackoverFlow"
+  },
+  {
+   "fieldname": "sub_designation",
+   "fieldtype": "Data",
+   "label": "Sub Designation"
+  },
+  {
+   "fieldname": "client_portal_log_status",
+   "fieldtype": "Data",
+   "label": "Client Portal Log Status"
+  },
+  {
+   "fieldname": "client_portal_invitation_status",
+   "fieldtype": "Data",
+   "label": "Client Portal Invitation Status"
+  },
+  {
+   "fieldname": "client_portal_user_account_status",
+   "fieldtype": "Data",
+   "label": "Client Portal User Account Status"
+  },
+  {
+   "fieldname": "partner_portal_log_status",
+   "fieldtype": "Data",
+   "label": "Partner Portal Log Status"
+  },
+  {
+   "fieldname": "partner_portal_invitation_status",
+   "fieldtype": "Data",
+   "label": "Partner Portal Invitation Status"
+  },
+  {
+   "fieldname": "partner_portal_user_account_status",
+   "fieldtype": "Data",
+   "label": "Partner Portal User Account Status"
+  },
+  {
+   "fieldname": "talent_portal_log_status",
+   "fieldtype": "Data",
+   "label": "Talent Portal Log Status"
+  },
+  {
+   "fieldname": "talent_portal_invitation_status",
+   "fieldtype": "Data",
+   "label": "Talent Portal Invitation Status"
+  },
+  {
+   "fieldname": "talent_portal_user_account_status",
+   "fieldtype": "Data",
+   "label": "Talent Portal User Account Status"
+  },
+  {
+   "fieldname": "client_portal_last_login",
+   "fieldtype": "Data",
+   "label": "Client Portal Last Login"
+  },
+  {
+   "fieldname": "partner_portal_last_login",
+   "fieldtype": "Data",
+   "label": "Partner Portal Last Login"
+  },
+  {
+   "fieldname": "talent_portal_last_login",
+   "fieldtype": "Data",
+   "label": "Talent Portal Last Login"
+  },
+  {
+   "fieldname": "talent_portal_invite_date",
+   "fieldtype": "Data",
+   "label": "Talent Portal Invite Date"
+  },
+  {
+   "fieldname": "client_portal_invite_date",
+   "fieldtype": "Data",
+   "label": "Client Portal Invite Date"
+  },
+  {
+   "fieldname": "partner_portal_invite_date",
+   "fieldtype": "Data",
+   "label": "Partner Portal Invite Date"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-17 15:05:01.716651",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "People",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

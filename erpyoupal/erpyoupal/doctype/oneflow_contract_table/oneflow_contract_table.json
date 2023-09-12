@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-06-21 17:55:13.060247",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "oneflow_legal",
+  "title",
+  "state",
+  "date_created",
+  "template_id"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "oneflow_legal",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "OneFlow Legal",
+   "options": "OneFlow Legal",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fetch_from": "oneflow_legal.title",
+   "fieldname": "title",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fetch_from": "oneflow_legal.contract_state",
+   "fieldname": "state",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "State",
+   "reqd": 1
+  },
+  {
+   "columns": 3,
+   "fetch_from": "oneflow_legal.creation",
+   "fieldname": "date_created",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Date Created",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "oneflow_legal.oneflow_template_id",
+   "fieldname": "template_id",
+   "fieldtype": "Read Only",
+   "label": " Template ID",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-29 06:52:50.436952",
+ "modified_by": "Administrator",
+ "module": "ERPYoupal",
+ "name": "OneFlow Contract Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
